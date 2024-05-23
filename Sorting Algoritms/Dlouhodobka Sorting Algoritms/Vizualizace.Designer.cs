@@ -34,6 +34,9 @@
             this.lb_zapisu = new System.Windows.Forms.Label();
             this.lb_cas = new System.Windows.Forms.Label();
             this.btn_close = new System.Windows.Forms.Button();
+            this.trbr_speed = new System.Windows.Forms.TrackBar();
+            this.tb_speed = new System.Windows.Forms.TextBox();
+            ((System.ComponentModel.ISupportInitialize)(this.trbr_speed)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_Ready
@@ -98,11 +101,30 @@
             this.btn_close.UseVisualStyleBackColor = true;
             this.btn_close.Click += new System.EventHandler(this.btn_close_Click);
             // 
+            // trbr_speed
+            // 
+            this.trbr_speed.Location = new System.Drawing.Point(22, 57);
+            this.trbr_speed.Maximum = 100;
+            this.trbr_speed.Name = "trbr_speed";
+            this.trbr_speed.Size = new System.Drawing.Size(304, 69);
+            this.trbr_speed.TabIndex = 6;
+            this.trbr_speed.ValueChanged += new System.EventHandler(this.trbr_speed_ValueChanged);
+            // 
+            // tb_speed
+            // 
+            this.tb_speed.Location = new System.Drawing.Point(22, 100);
+            this.tb_speed.Name = "tb_speed";
+            this.tb_speed.Size = new System.Drawing.Size(100, 26);
+            this.tb_speed.TabIndex = 7;
+            this.tb_speed.TextChanged += new System.EventHandler(this.tb_speed_TextChanged);
+            // 
             // Vizualizace
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1520, 692);
+            this.Controls.Add(this.tb_speed);
+            this.Controls.Add(this.trbr_speed);
             this.Controls.Add(this.btn_close);
             this.Controls.Add(this.lb_cas);
             this.Controls.Add(this.lb_zapisu);
@@ -113,6 +135,7 @@
             this.Name = "Vizualizace";
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Vizualizace_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.trbr_speed)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -126,5 +149,7 @@
         private System.Windows.Forms.Label lb_zapisu;
         private System.Windows.Forms.Label lb_cas;
         private System.Windows.Forms.Button btn_close;
+        private System.Windows.Forms.TrackBar trbr_speed;
+        private System.Windows.Forms.TextBox tb_speed;
     }
 }

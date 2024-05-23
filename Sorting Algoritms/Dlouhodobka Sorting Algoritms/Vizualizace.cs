@@ -33,6 +33,7 @@ namespace Dlouhodobka_Sorting_Algoritms
         static bool start = false;
         static bool algChosen = false;
         static bool close = false;
+        static bool delBool = false;
         #endregion
 
         public Vizualizace(int pPrvku, int dDelay, int alg, bool fast)
@@ -58,6 +59,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             algChosen = false;
             close = false;
             okno = this;
+            trbr_speed.Value = delay;
 
             rectangles = new Rectangle[pocet];
             GenPole();
@@ -593,6 +595,7 @@ namespace Dlouhodobka_Sorting_Algoritms
 
             if (!fMode)
             {
+
                 this.Invoke((MethodInvoker)delegate
                 {
                     // Přidání zpoždění (např. 100 ms)
@@ -691,6 +694,48 @@ namespace Dlouhodobka_Sorting_Algoritms
             start = false;
             algChosen = false;
             close = false;
+        }
+
+        private void trbr_speed_ValueChanged(object sender, EventArgs e)
+        {
+            if (trbr_speed.Value == 0)
+            {
+                fMode = true;
+                tb_speed.Text = "TURBO";
+            }
+            else if (delay > trbr_speed.Maximum)
+            {
+                fMode = false;
+            }
+            else
+            {
+                tb_speed.Text = Convert.ToString(trbr_speed.Value);
+                fMode = false;
+                delay = trbr_speed.Value;
+            }
+        }
+
+        private void tb_speed_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                if (Convert.ToInt32(tb_speed.Text) != trbr_speed.Value)
+                {
+                    if (Convert.ToInt32(tb_speed.Text) > trbr_speed.Maximum)
+                    {
+                        delay = Convert.ToInt32(tb_speed.Text);
+                        trbr_speed.Value = trbr_speed.Maximum;
+                    }
+                    else
+                    {
+                        delay = Convert.ToInt32(tb_speed.Text);
+                        trbr_speed.Value = Convert.ToInt32(tb_speed.Text);
+                    }
+                }
+            }
+            catch
+            {
+            }
         }
     }
 }
