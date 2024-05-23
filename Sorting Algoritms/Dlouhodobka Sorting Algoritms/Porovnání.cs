@@ -119,7 +119,7 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private async void btn_start_Click(object sender, EventArgs e)
         {
-
+       
             btn_start.Enabled = false;
             btn_start.BackColor = Color.LightGray;
 
@@ -144,10 +144,18 @@ namespace Dlouhodobka_Sorting_Algoritms
                     return;
                 }
 
+                if(i > 1)
+                {
+                    pocet = pocet + Convert.ToInt32(tbAdd.Text);
+                    tb_pocet.Text = Convert.ToString(pocet);
+                }
+                
+
                 pbBubble.Maximum = pocet - 1;
                 pbOdd.Maximum = (pocet * 2) - 1;
                 pbHeap.Maximum = pocet - 1;
                 pbQuick.Maximum = pocet + (pocet / 10);
+
                 #endregion
 
                 #region Sorts
@@ -207,6 +215,9 @@ namespace Dlouhodobka_Sorting_Algoritms
                 #endregion
 
                 ChartLoad();
+                if (i == 1)
+                    chartsTab.DisableCharts(cbBubble.Checked, cbOdd.Checked, cbQuick.Checked, cbBogo.Checked, cbHeap.Checked);
+
                 chartsTab.UpdateCharts();
             }
         }

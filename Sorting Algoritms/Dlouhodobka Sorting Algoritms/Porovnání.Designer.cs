@@ -77,6 +77,8 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.cb_quick = new System.Windows.Forms.CheckBox();
             this.cb_bogo = new System.Windows.Forms.CheckBox();
             this.cb_heap = new System.Windows.Forms.CheckBox();
+            this.label7 = new System.Windows.Forms.Label();
+            this.tbAdd = new System.Windows.Forms.TextBox();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -474,6 +476,8 @@ namespace Dlouhodobka_Sorting_Algoritms
             // 
             this.panel6.BackColor = System.Drawing.SystemColors.ControlLight;
             this.panel6.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel6.Controls.Add(this.label7);
+            this.panel6.Controls.Add(this.tbAdd);
             this.panel6.Controls.Add(this.check);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.tb_repet);
@@ -491,7 +495,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // check
             // 
             this.check.AutoSize = true;
-            this.check.Location = new System.Drawing.Point(911, 88);
+            this.check.Location = new System.Drawing.Point(11, 21);
             this.check.Name = "check";
             this.check.Size = new System.Drawing.Size(44, 16);
             this.check.TabIndex = 7;
@@ -501,7 +505,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label6.Location = new System.Drawing.Point(602, 59);
+            this.label6.Location = new System.Drawing.Point(602, 70);
             this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(202, 25);
@@ -511,7 +515,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // tb_repet
             // 
             this.tb_repet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tb_repet.Location = new System.Drawing.Point(823, 60);
+            this.tb_repet.Location = new System.Drawing.Point(823, 71);
             this.tb_repet.Margin = new System.Windows.Forms.Padding(4);
             this.tb_repet.Name = "tb_repet";
             this.tb_repet.Size = new System.Drawing.Size(132, 24);
@@ -534,7 +538,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // 
             this.label26.AutoSize = true;
             this.label26.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label26.Location = new System.Drawing.Point(602, 23);
+            this.label26.Location = new System.Drawing.Point(602, 9);
             this.label26.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(192, 25);
@@ -544,7 +548,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // tb_pocet
             // 
             this.tb_pocet.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.tb_pocet.Location = new System.Drawing.Point(823, 23);
+            this.tb_pocet.Location = new System.Drawing.Point(823, 9);
             this.tb_pocet.Margin = new System.Windows.Forms.Padding(4);
             this.tb_pocet.Name = "tb_pocet";
             this.tb_pocet.Size = new System.Drawing.Size(132, 24);
@@ -619,6 +623,27 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.cb_heap.TabIndex = 20;
             this.cb_heap.Text = "Disable";
             this.cb_heap.UseVisualStyleBackColor = true;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.Location = new System.Drawing.Point(602, 34);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(89, 25);
+            this.label7.TabIndex = 9;
+            this.label7.Text = "Addition:";
+            // 
+            // tbAdd
+            // 
+            this.tbAdd.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.tbAdd.Location = new System.Drawing.Point(823, 34);
+            this.tbAdd.Margin = new System.Windows.Forms.Padding(4);
+            this.tbAdd.Name = "tbAdd";
+            this.tbAdd.Size = new System.Drawing.Size(132, 24);
+            this.tbAdd.TabIndex = 8;
+            this.tbAdd.Text = "100";
             // 
             // Porovnání
             // 
@@ -717,5 +742,7 @@ namespace Dlouhodobka_Sorting_Algoritms
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_repet;
         private System.Windows.Forms.Label check;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.TextBox tbAdd;
     }
 }

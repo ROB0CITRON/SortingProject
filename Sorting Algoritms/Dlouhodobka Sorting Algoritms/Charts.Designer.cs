@@ -160,7 +160,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(936, 637);
+            this.ClientSize = new System.Drawing.Size(939, 637);
             this.Controls.Add(this.chart6);
             this.Controls.Add(this.chart5);
             this.Controls.Add(this.chart4);

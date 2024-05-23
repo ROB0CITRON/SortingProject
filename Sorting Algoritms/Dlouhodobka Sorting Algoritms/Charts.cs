@@ -36,6 +36,17 @@ namespace Dlouhodobka_Sorting_Algoritms
             heaTime = heaTimes;
         }
 
+        public void UpdateData(int elements, double bubTimes, double oddTimes,
+            double quiTimes, double bogTimes, double heaTimes)
+        {
+            element = elements;
+            bubTime = bubTimes;
+            oddTime = oddTimes;
+            quiTime = quiTimes;
+            bogTime = bogTimes;
+            heaTime = heaTimes;
+        }
+
         #region Loads
         private void Charts_Load(object sender, EventArgs e)
         {
@@ -55,17 +66,20 @@ namespace Dlouhodobka_Sorting_Algoritms
             HeapChart(element, heaTime, false);
         }
 
-        public void UpdateData(int elements, double bubTimes, double oddTimes,
-            double quiTimes, double bogTimes, double heaTimes)
+        public void DisableCharts(bool bub, bool odd, bool qui, bool bog, bool hea)
         {
-            element = elements;
-            bubTime = bubTimes;
-            oddTime = oddTimes;
-            quiTime = quiTimes;
-            bogTime = bogTimes;
-            heaTime = heaTimes;
-
+            if (bub)
+                chart1.Visible = false;
+            if (odd)
+                chart2.Visible = false;
+            if (qui)
+                chart3.Visible = false;
+            if (bog)
+                chart4.Visible = false;
+            if (hea)
+                chart5.Visible = false;
         }
+
         #endregion
 
         #region Charts
