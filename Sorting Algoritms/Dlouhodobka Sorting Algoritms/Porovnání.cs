@@ -133,6 +133,7 @@ namespace Dlouhodobka_Sorting_Algoritms
                 check.Text = $"{i}";
                 Reset();
 
+                #region Val
                 try
                 {
                     pocet = Convert.ToInt32(tb_pocet.Text);
@@ -147,7 +148,9 @@ namespace Dlouhodobka_Sorting_Algoritms
                 pbOdd.Maximum = (pocet * 2) - 1;
                 pbHeap.Maximum = pocet - 1;
                 pbQuick.Maximum = pocet + (pocet / 10);
+                #endregion
 
+                #region Sorts
                 GenPole();
                 await Task.Run(() => BubbleSortAlgorithm(numbers));
                 porovnani = 0;
@@ -193,18 +196,22 @@ namespace Dlouhodobka_Sorting_Algoritms
 
                 GenPole();
                 await Task.Run(() => HeapSort(numbers));
+                #endregion
 
-
+                #region Texts
                 lbBubblePoradi.Text = "Order: " + NajdiPoradi(casy, 0);
                 lbOddPoradi.Text = "Order: " + NajdiPoradi(casy, 1);
                 lbQuickPoradi.Text = "Order: " + NajdiPoradi(casy, 2);
                 lbBogoPoradi.Text = "Order: " + NajdiPoradi(casy, 3);
                 lbHeapPoradi.Text = "Order: " + NajdiPoradi(casy, 4);
+                #endregion
 
-
+                ChartLoad();
+                chartsTab.UpdateCharts();
             }
         }
 
+        #region Gen
         public void GenPole()
         {
             // Vytvoření pole s čísly od 1 do 30
@@ -246,6 +253,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // Pokud index není nalezen, vrátit -1 nebo vhodnou hodnotu
             return 0;
         }
+        #endregion
 
         #region Sorts
         void BubbleSortAlgorithm(int[] arr)
@@ -569,42 +577,83 @@ namespace Dlouhodobka_Sorting_Algoritms
             btn_start.BackColor = Color.White;
             btn_start.Enabled = true;
 
-            lbBubbleCas.Text = "Time: ?? ms";
+            lbBubbleCas.Text = "Time: 0 ms";
             lbBubblePorovnani.Text = "Number of comparisons: ??";
             lbBubbleZapis.Text = "Number of entries: ??";
             lbBubblePoradi.Text = "Order: ??";
 
-            lbOddCas.Text = "Time: ?? ms";
+            lbOddCas.Text = "Time: 0 ms";
             lbOddPorovnani.Text = "Number of comparisons: ??";
             lbOddZapis.Text = "Number of entries: ??";
             lbOddPoradi.Text = "Order: ??";
 
-            lbQuickCas.Text = "Time: ?? ms";
+            lbQuickCas.Text = "Time: 0 ms";
             lbQuickPorovnani.Text = "Number of comparisons: ??";
             lbQuickZapis.Text = "Number of entries: ??";
             lbQuickPoradi.Text = "Order: ??";
 
-            lbBogoCas.Text = "Time: ?? ms";
+            lbBogoCas.Text = "Time: 0 ms";
             lbBogoPorovnani.Text = "Number of comparisons: ??";
             lbBogoZapis.Text = "Number of entries: ??";
             lbBogoPoradi.Text = "Order: ??";
 
-            lbHeapCas.Text = "Time: ?? ms";
+            lbHeapCas.Text = "Time: 0 ms";
             lbHeapPorovnani.Text = "Number of comparisons: ??";
             lbHeapZapis.Text = "Number of entries: ??";
             lbHeapPoradi.Text = "Order: ??";
         }
 
-        private void chartsBtn_Click(object sender, EventArgs e)
+        void ChartLoad()
         {
             if (chartsTab == null || chartsTab.IsDisposed)
             {
-                chartsTab = new Charts();
+                int pocet = Convert.ToInt32(tb_pocet.Text);
+
+                double bubbleTime = cbBubble.Checked ? 0 : ConvertLabelToDouble(lbBubbleCas);
+                double OddTime = cbOdd.Checked ? 0 : ConvertLabelToDouble(lbOddCas);
+                double QuickTime = cbQuick.Checked ? 0 : ConvertLabelToDouble(lbQuickCas);
+                double BogoTime = cbBogo.Checked ? 0 : ConvertLabelToDouble(lbBogoCas);
+                double HeapTime = cbHeap.Checked ? 0 : ConvertLabelToDouble(lbHeapCas);
+
+                chartsTab = new Charts(pocet, bubbleTime, OddTime,
+                    QuickTime, BogoTime, HeapTime);
+            }
+            else
+            {
+                int pocet = Convert.ToInt32(tb_pocet.Text);
+
+                double bubbleTime = cbBubble.Checked ? 0 : ConvertLabelToDouble(lbBubbleCas);
+                double OddTime = cbOdd.Checked ? 0 : ConvertLabelToDouble(lbOddCas);
+                double QuickTime = cbQuick.Checked ? 0 : ConvertLabelToDouble(lbQuickCas);
+                double BogoTime = cbBogo.Checked ? 0 : ConvertLabelToDouble(lbBogoCas);
+                double HeapTime = cbHeap.Checked ? 0 : ConvertLabelToDouble(lbHeapCas);
+
+                chartsTab.UpdateData(pocet, bubbleTime, OddTime,
+                    QuickTime, BogoTime, HeapTime);
             }
 
             chartsTab.Show();
             chartsTab.Activate();
         }
+
+        private double ConvertLabelToDouble(Label label)
+        {
+            string text = label.Text;
+
+            // Remove "Time: " and " ms" from the text
+            text = text.Replace("Time:", "").Replace("ms", "").Trim();
+
+            if (double.TryParse(text, out double result))
+            {
+                return result;
+            }
+            else
+            {
+                MessageBox.Show($"Invalid format for label {label.Name}. Using 0 instead.", "Format Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return 0;
+            }
+        }
+
         #endregion
     }
 }

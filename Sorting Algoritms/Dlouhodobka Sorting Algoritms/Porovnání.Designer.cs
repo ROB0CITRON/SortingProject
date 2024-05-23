@@ -65,9 +65,9 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.lb_HeapPorovnani = new System.Windows.Forms.Label();
             this.lb_HeapCas = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.check = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.tb_repet = new System.Windows.Forms.TextBox();
-            this.chartsBtn = new System.Windows.Forms.Button();
             this.btn_reset = new System.Windows.Forms.Button();
             this.label26 = new System.Windows.Forms.Label();
             this.tb_pocet = new System.Windows.Forms.TextBox();
@@ -77,7 +77,6 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.cb_quick = new System.Windows.Forms.CheckBox();
             this.cb_bogo = new System.Windows.Forms.CheckBox();
             this.cb_heap = new System.Windows.Forms.CheckBox();
-            this.check = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -180,9 +179,9 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.lb_BubbleCas.Location = new System.Drawing.Point(19, 16);
             this.lb_BubbleCas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_BubbleCas.Name = "lb_BubbleCas";
-            this.lb_BubbleCas.Size = new System.Drawing.Size(90, 18);
+            this.lb_BubbleCas.Size = new System.Drawing.Size(82, 18);
             this.lb_BubbleCas.TabIndex = 0;
-            this.lb_BubbleCas.Text = "Time: ?? ms";
+            this.lb_BubbleCas.Text = "Time: 0 ms";
             // 
             // label1
             // 
@@ -293,9 +292,9 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.lb_OddCas.Location = new System.Drawing.Point(19, 16);
             this.lb_OddCas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_OddCas.Name = "lb_OddCas";
-            this.lb_OddCas.Size = new System.Drawing.Size(90, 18);
+            this.lb_OddCas.Size = new System.Drawing.Size(82, 18);
             this.lb_OddCas.TabIndex = 0;
-            this.lb_OddCas.Text = "Time: ?? ms";
+            this.lb_OddCas.Text = "Time: 0 ms";
             // 
             // panel3
             // 
@@ -351,9 +350,9 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.lb_QuickCas.Location = new System.Drawing.Point(19, 16);
             this.lb_QuickCas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_QuickCas.Name = "lb_QuickCas";
-            this.lb_QuickCas.Size = new System.Drawing.Size(90, 18);
+            this.lb_QuickCas.Size = new System.Drawing.Size(82, 18);
             this.lb_QuickCas.TabIndex = 0;
-            this.lb_QuickCas.Text = "Time: ?? ms";
+            this.lb_QuickCas.Text = "Time: 0 ms";
             // 
             // panel4
             // 
@@ -409,9 +408,9 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.lb_BogoCas.Location = new System.Drawing.Point(19, 16);
             this.lb_BogoCas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_BogoCas.Name = "lb_BogoCas";
-            this.lb_BogoCas.Size = new System.Drawing.Size(90, 18);
+            this.lb_BogoCas.Size = new System.Drawing.Size(82, 18);
             this.lb_BogoCas.TabIndex = 0;
-            this.lb_BogoCas.Text = "Time: ?? ms";
+            this.lb_BogoCas.Text = "Time: 0 ms";
             // 
             // panel5
             // 
@@ -467,9 +466,9 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.lb_HeapCas.Location = new System.Drawing.Point(19, 16);
             this.lb_HeapCas.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lb_HeapCas.Name = "lb_HeapCas";
-            this.lb_HeapCas.Size = new System.Drawing.Size(90, 18);
+            this.lb_HeapCas.Size = new System.Drawing.Size(82, 18);
             this.lb_HeapCas.TabIndex = 0;
-            this.lb_HeapCas.Text = "Time: ?? ms";
+            this.lb_HeapCas.Text = "Time: 0 ms";
             // 
             // panel6
             // 
@@ -478,7 +477,6 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.panel6.Controls.Add(this.check);
             this.panel6.Controls.Add(this.label6);
             this.panel6.Controls.Add(this.tb_repet);
-            this.panel6.Controls.Add(this.chartsBtn);
             this.panel6.Controls.Add(this.btn_reset);
             this.panel6.Controls.Add(this.label26);
             this.panel6.Controls.Add(this.tb_pocet);
@@ -489,6 +487,15 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(980, 115);
             this.panel6.TabIndex = 15;
+            // 
+            // check
+            // 
+            this.check.AutoSize = true;
+            this.check.Location = new System.Drawing.Point(911, 88);
+            this.check.Name = "check";
+            this.check.Size = new System.Drawing.Size(44, 16);
+            this.check.TabIndex = 7;
+            this.check.Text = "label7";
             // 
             // label6
             // 
@@ -511,22 +518,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.tb_repet.TabIndex = 5;
             this.tb_repet.Text = "10";
             // 
-            // chartsBtn
-            // 
-            this.chartsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.chartsBtn.Location = new System.Drawing.Point(424, 22);
-            this.chartsBtn.Margin = new System.Windows.Forms.Padding(4);
-            this.chartsBtn.Name = "chartsBtn";
-            this.chartsBtn.Size = new System.Drawing.Size(170, 74);
-            this.chartsBtn.TabIndex = 4;
-            this.chartsBtn.Text = "Charts";
-            this.chartsBtn.UseVisualStyleBackColor = true;
-            this.chartsBtn.Click += new System.EventHandler(this.chartsBtn_Click);
-            // 
             // btn_reset
             // 
             this.btn_reset.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_reset.Location = new System.Drawing.Point(217, 21);
+            this.btn_reset.Location = new System.Drawing.Point(343, 21);
             this.btn_reset.Margin = new System.Windows.Forms.Padding(4);
             this.btn_reset.Name = "btn_reset";
             this.btn_reset.Size = new System.Drawing.Size(170, 74);
@@ -559,7 +554,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             // btn_start
             // 
             this.btn_start.Font = new System.Drawing.Font("Microsoft Sans Serif", 20F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.btn_start.Location = new System.Drawing.Point(10, 21);
+            this.btn_start.Location = new System.Drawing.Point(72, 21);
             this.btn_start.Margin = new System.Windows.Forms.Padding(4);
             this.btn_start.Name = "btn_start";
             this.btn_start.Size = new System.Drawing.Size(170, 74);
@@ -624,15 +619,6 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.cb_heap.TabIndex = 20;
             this.cb_heap.Text = "Disable";
             this.cb_heap.UseVisualStyleBackColor = true;
-            // 
-            // check
-            // 
-            this.check.AutoSize = true;
-            this.check.Location = new System.Drawing.Point(911, 88);
-            this.check.Name = "check";
-            this.check.Size = new System.Drawing.Size(44, 16);
-            this.check.TabIndex = 7;
-            this.check.Text = "label7";
             // 
             // Porovnání
             // 
@@ -728,7 +714,6 @@ namespace Dlouhodobka_Sorting_Algoritms
         private System.Windows.Forms.CheckBox cb_quick;
         private System.Windows.Forms.CheckBox cb_bogo;
         private System.Windows.Forms.CheckBox cb_heap;
-        private System.Windows.Forms.Button chartsBtn;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox tb_repet;
         private System.Windows.Forms.Label check;
