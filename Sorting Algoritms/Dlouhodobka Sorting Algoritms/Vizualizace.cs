@@ -173,6 +173,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                     {
                         Swap(arr, i, i + 1);
                         sorted = false;
+                        if (close)
+                        {
+                            return;
+                        }
                     }
                     porovnani++;
 
@@ -194,6 +198,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                     {
                         Swap(arr, i, i + 1);
                         sorted = false;
+                        if (close)
+                        {
+                            return;
+                        }
                     }
                     porovnani++;
 
@@ -228,6 +236,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             // Check if there are elements to sort
             if (left < right)
             {
+                if (close)
+                {
+                    return;
+                }
                 // Find the pivot index
                 int pivot = Partition(arr, left, right);
 
@@ -239,6 +251,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 if (pivot + 1 < right)
                 {
                     Quick_Sort(arr, pivot + 1, right);
+                }
+                if (close)
+                {
+                    return;
                 }
             }
         }
@@ -261,6 +277,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             // Continue until left and right pointers meet
             while (true)
             {
+                if (close)
+                {
+                    return 0;
+                }
                 using (SolidBrush brush = new SolidBrush(col))
                 {
                     using (Graphics g = okno.CreateGraphics())
@@ -274,6 +294,10 @@ namespace Dlouhodobka_Sorting_Algoritms
 
                         }
                     }
+                }
+                if (close)
+                {
+                    return 0;
                 }
 
                 // Move left pointer until a value greater than or equal to pivot is found
@@ -295,6 +319,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 {
                     if (arr[left] == arr[right]) return right;
                     Swap(arr, left, right);
+                    if (close)
+                    {
+                        return 0;
+                    }
 
                     this.Invoke((MethodInvoker)delegate
                     {
@@ -320,6 +348,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             while (!IsSorted(arr))
             {
                 Shuffle(arr, random);
+                if (close)
+                {
+                    return;
+                }
 
                 if (fMode)
                 {
@@ -368,6 +400,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 int k = random.Next(n + 1);
 
                 Swap(arr, k, n);
+                if (close)
+                {
+                    return;
+                }
             }
         }
 
@@ -399,6 +435,10 @@ namespace Dlouhodobka_Sorting_Algoritms
 
                 // call max heapify on the reduced heap
                 Heapify(array, i, 0);
+                if (close)
+                {
+                    return;
+                }
 
                 this.Invoke((MethodInvoker)delegate
                 {
@@ -429,10 +469,18 @@ namespace Dlouhodobka_Sorting_Algoritms
 
             porovnani++;
 
+            if (close)
+            {
+                return;
+            }
             // If largest is not root
             if (largest != i)
             {
                 Swap(array, i, largest);
+                if (close)
+                {
+                    return;
+                }
 
                 // Recursively heapify the affected sub-tree
                 Heapify(array, n, largest);

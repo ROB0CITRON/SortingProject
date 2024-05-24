@@ -8,7 +8,6 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Rebar;
 
 namespace Dlouhodobka_Sorting_Algoritms
 {
@@ -63,6 +62,7 @@ namespace Dlouhodobka_Sorting_Algoritms
         static int porovnani = 0;
         static int zapis = 0;
         static double cas;
+        static bool resBool = false;
 
         static double[] casy = new double[5];
 
@@ -120,7 +120,7 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private async void btn_start_Click(object sender, EventArgs e)
         {
-
+            resBool = false;
             btn_start.Enabled = false;
             btn_start.BackColor = Color.LightGray;
 
@@ -175,7 +175,7 @@ namespace Dlouhodobka_Sorting_Algoritms
                 stopwatch.Start();
                 await Task.Run(() => Quick_Sort(numbers, 0, pocet - 1));
                 stopwatch.Stop();
-                if (!cbQuick.Checked)
+                if (!cbQuick.Checked && !resBool)
                 {
                     cas = stopwatch.Elapsed.TotalMilliseconds;
                     casy[2] = cas;
@@ -190,7 +190,7 @@ namespace Dlouhodobka_Sorting_Algoritms
                 GenPole();
                 await Task.Run(() => BogoSort(numbers));
                 stopwatch.Stop();
-                if (!cbBogo.Checked)
+                if (!cbBogo.Checked && !resBool)
                 {
                     pbBogo.Value = pbBogo.Maximum;
                     cas = stopwatch.Elapsed.TotalMilliseconds;
@@ -215,6 +215,14 @@ namespace Dlouhodobka_Sorting_Algoritms
                 lbHeapPoradi.Text = "Order: " + NajdiPoradi(casy, 4);
                 #endregion
 
+                if (resBool)
+                {
+                    if (chartsTab != null)
+                    {
+                        chartsTab.Dispose();
+                    }
+                    return;
+                }
                 ChartLoad();
                 if (i == 1)
                     chartsTab.DisableCharts(cbBubble.Checked, cbOdd.Checked, cbQuick.Checked, cbBogo.Checked, cbHeap.Checked);
@@ -284,6 +292,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                     if (arr[j] > arr[j + 1])
                     {
                         Swap(arr, j, j + 1);
+                        if (resBool)
+                        {
+                            return;
+                        }
                     }
                     porovnani++;
                 }
@@ -309,6 +321,11 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         static void Swap(int[] arr, int i, int j)
         {
+            if (resBool)
+            {
+                return;
+            }
+
             int temp = arr[i];
             arr[i] = arr[j];
             arr[j] = temp;
@@ -339,6 +356,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                     {
                         Swap(arr, i, i + 1);
                         sorted = false;
+                        if (resBool)
+                        {
+                            return;
+                        }
                     }
                     porovnani++;
                 }
@@ -355,6 +376,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                     {
                         Swap(arr, i, i + 1);
                         sorted = false;
+                        if (resBool)
+                        {
+                            return;
+                        }
                     }
                     porovnani++;
                 }
@@ -382,12 +407,16 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private void Quick_Sort(int[] arr, int left, int right)
         {
-            if (cbQuick.Checked)
+            if (cbQuick.Checked || resBool)
                 return;
 
             // Check if there are elements to sort
             if (left < right)
             {
+                if (resBool)
+                {
+                    return;
+                }
                 // Find the pivot index
                 int pivot = Partition(arr, left, right);
 
@@ -399,6 +428,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 if (pivot + 1 < right)
                 {
                     Quick_Sort(arr, pivot + 1, right);
+                }
+                if (resBool)
+                {
+                    return;
                 }
             }
             this.Invoke((MethodInvoker)delegate
@@ -417,6 +450,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             // Continue until left and right pointers meet
             while (true)
             {
+                if (resBool)
+                {
+                    return 0;
+                }
                 // Move left pointer until a value greater than or equal to pivot is found
                 while (arr[left] < pivot)
                 {
@@ -436,6 +473,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 {
                     if (arr[left] == arr[right]) return right;
                     Swap(arr, left, right);
+                    if (resBool)
+                    {
+                        return 0; ;
+                    }
                 }
                 else
                 {
@@ -457,6 +498,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             while (!IsSorted(arr))
             {
                 Shuffle(arr, random);
+                if (resBool)
+                {
+                    return;
+                }
             }
         }
 
@@ -491,6 +536,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 int k = random.Next(n + 1);
 
                 Swap(arr, k, n);
+                if (resBool)
+                {
+                    return;
+                }
             }
         }
 
@@ -515,6 +564,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             {
                 // Move current root to end
                 Swap(array, 0, i);
+                if (resBool)
+                {
+                    return;
+                }
 
                 // call max heapify on the reduced heap
                 Heapify(array, i, 0);
@@ -540,6 +593,10 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         void Heapify(int[] array, int n, int i)
         {
+            if (resBool)
+            {
+                return;
+            }
             int largest = i; // Initialize largest as root
             int l = 2 * i + 1; // left = 2*i + 1
             int r = 2 * i + 2; // right = 2*i + 2
@@ -560,6 +617,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             if (largest != i)
             {
                 Swap(array, i, largest);
+                if (resBool)
+                {
+                    return;
+                }
 
                 // Recursively heapify the affected sub-tree
                 Heapify(array, n, largest);
@@ -570,7 +631,12 @@ namespace Dlouhodobka_Sorting_Algoritms
         #endregion
 
         #region Btns
-        private void btn_reset_Click(object sender, EventArgs e) => Reset();
+        private void btn_reset_Click(object sender, EventArgs e)
+        {
+            resBool = true;
+            Reset();
+
+        }
 
         void Reset()
         {
