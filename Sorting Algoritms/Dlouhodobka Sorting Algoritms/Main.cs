@@ -57,5 +57,10 @@ namespace Dlouhodobka_Sorting_Algoritms
         {
 
         }
+
+        private void pb_web_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
