@@ -117,3 +117,17 @@ C:\Users\RYZEN\Desktop\Nová složka\Sorting Algoritms\Dlouhodobka Sorting Algor
 C:\Users\RYZEN\Desktop\Nová složka\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.CoreCompileInputs.cache
 C:\Users\RYZEN\Desktop\Nová složka\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.exe
 C:\Users\RYZEN\Desktop\Nová složka\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.pdb
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.exe.config
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.exe
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.pdb
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csprojAssemblyReference.cache
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Charts.resources
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Porovnání.resources
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Main.resources
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.ListAlg.resources
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Properties.Resources.resources
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Vizualizace.resources
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.GenerateResource.cache
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.CoreCompileInputs.cache
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.exe
+C:\Users\LUKAS\Desktop\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.pdb

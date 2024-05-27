@@ -19,7 +19,7 @@ namespace Dlouhodobka_Sorting_Algoritms.Properties {
     // pomocí nástroje podobného aplikaci ResGen nebo Visual Studio.
     // Chcete-li přidat nebo odebrat člena, upravte souboru .ResX a pak znovu spusťte aplikaci ResGen
     // s parametrem /str nebo znovu sestavte projekt aplikace Visual Studio.
-    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "16.0.0.0")]
+    [global::System.CodeDom.Compiler.GeneratedCodeAttribute("System.Resources.Tools.StronglyTypedResourceBuilder", "15.0.0.0")]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
     [global::System.Runtime.CompilerServices.CompilerGeneratedAttribute()]
     internal class Resources {
@@ -166,6 +166,16 @@ namespace Dlouhodobka_Sorting_Algoritms.Properties {
         internal static System.Drawing.Bitmap twitter {
             get {
                 object obj = ResourceManager.GetObject("twitter", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Untitled_2_copy {
+            get {
+                object obj = ResourceManager.GetObject("Untitled-2_copy", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

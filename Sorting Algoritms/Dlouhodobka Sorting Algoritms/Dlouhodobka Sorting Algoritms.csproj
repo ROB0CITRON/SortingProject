@@ -159,5 +159,8 @@
   <ItemGroup>
     <None Include="Resources\instagram.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Untitled-2_copy.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
