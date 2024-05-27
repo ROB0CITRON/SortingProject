@@ -103,6 +103,16 @@ namespace Dlouhodobka_Sorting_Algoritms.Properties {
         /// <summary>
         ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap cross {
+            get {
+                object obj = ResourceManager.GetObject("cross", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap faq {
             get {
                 object obj = ResourceManager.GetObject("faq", resourceCulture);
@@ -136,6 +146,16 @@ namespace Dlouhodobka_Sorting_Algoritms.Properties {
         internal static System.Drawing.Bitmap line_graph {
             get {
                 object obj = ResourceManager.GetObject("line-graph", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Vyhledává lokalizovaný prostředek typu System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap play__1_ {
+            get {
+                object obj = ResourceManager.GetObject("play (1)", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

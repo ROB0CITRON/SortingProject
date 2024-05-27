@@ -37,12 +37,19 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.panel6 = new System.Windows.Forms.Panel();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.panel6 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.label7 = new System.Windows.Forms.Label();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.pb_web = new System.Windows.Forms.PictureBox();
             this.pictureBox4 = new System.Windows.Forms.PictureBox();
@@ -50,27 +57,21 @@
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btn_All = new System.Windows.Forms.Button();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.panel7 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             this.panel6.SuspendLayout();
+            this.panel7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_web)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_List
@@ -171,36 +172,16 @@
             this.panel3.Size = new System.Drawing.Size(210, 129);
             this.panel3.TabIndex = 7;
             // 
-            // panel4
+            // label4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel4.Controls.Add(this.label6);
-            this.panel4.Location = new System.Drawing.Point(536, 138);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(210, 129);
-            this.panel4.TabIndex = 8;
-            // 
-            // panel5
-            // 
-            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel5.Controls.Add(this.label10);
-            this.panel5.Controls.Add(this.label9);
-            this.panel5.Controls.Add(this.label8);
-            this.panel5.Location = new System.Drawing.Point(290, 292);
-            this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(210, 129);
-            this.panel5.TabIndex = 8;
-            // 
-            // panel6
-            // 
-            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.panel6.Controls.Add(this.pictureBox6);
-            this.panel6.Controls.Add(this.pictureBox5);
-            this.panel6.Controls.Add(this.label5);
-            this.panel6.Location = new System.Drawing.Point(536, 292);
-            this.panel6.Name = "panel6";
-            this.panel6.Size = new System.Drawing.Size(210, 129);
-            this.panel6.TabIndex = 8;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label4.Location = new System.Drawing.Point(19, 47);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(171, 17);
+            this.label4.TabIndex = 1;
+            this.label4.Text = "Here is a link to our Git Hub";
             // 
             // label3
             // 
@@ -213,16 +194,80 @@
             this.label3.TabIndex = 0;
             this.label3.Text = "Any questions?";
             // 
-            // label4
+            // panel4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label4.Location = new System.Drawing.Point(19, 47);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(171, 17);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Here is a link to our Git Hub";
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel4.Controls.Add(this.label6);
+            this.panel4.Location = new System.Drawing.Point(536, 138);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(210, 129);
+            this.panel4.TabIndex = 8;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
+            this.label6.Location = new System.Drawing.Point(3, 11);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(112, 25);
+            this.label6.TabIndex = 0;
+            this.label6.Text = "Patch Notes";
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel5.Controls.Add(this.label10);
+            this.panel5.Controls.Add(this.label9);
+            this.panel5.Controls.Add(this.label8);
+            this.panel5.Location = new System.Drawing.Point(290, 292);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(210, 129);
+            this.panel5.TabIndex = 8;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label10.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label10.Location = new System.Drawing.Point(19, 76);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(163, 16);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "placeholder2@email.com";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label9.Location = new System.Drawing.Point(18, 51);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(156, 16);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "palceholder@email.com";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            this.label8.Location = new System.Drawing.Point(3, 8);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(155, 30);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Report bugs at:";
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.panel6.Controls.Add(this.pictureBox6);
+            this.panel6.Controls.Add(this.pictureBox5);
+            this.panel6.Controls.Add(this.label5);
+            this.panel6.Location = new System.Drawing.Point(536, 292);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(210, 129);
+            this.panel6.TabIndex = 8;
             // 
             // label5
             // 
@@ -234,6 +279,36 @@
             this.label5.Size = new System.Drawing.Size(154, 25);
             this.label5.TabIndex = 0;
             this.label5.Text = "Follow us online!";
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(51)))));
+            this.panel7.Controls.Add(this.label7);
+            this.panel7.Location = new System.Drawing.Point(536, 177);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(210, 90);
+            this.panel7.TabIndex = 1;
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
+            this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
+            this.label7.Location = new System.Drawing.Point(51, 36);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(104, 16);
+            this.label7.TabIndex = 0;
+            this.label7.Text = "Placeholder text";
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.twitter;
+            this.pictureBox6.Location = new System.Drawing.Point(120, 51);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(61, 61);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
             // 
             // pictureBox5
             // 
@@ -313,79 +388,13 @@
             this.btn_All.UseVisualStyleBackColor = false;
             this.btn_All.Click += new System.EventHandler(this.btn_All_Click);
             // 
-            // pictureBox6
+            // panel8
             // 
-            this.pictureBox6.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.twitter;
-            this.pictureBox6.Location = new System.Drawing.Point(120, 51);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(61, 61);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
-            this.label6.Location = new System.Drawing.Point(3, 11);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(112, 25);
-            this.label6.TabIndex = 0;
-            this.label6.Text = "Patch Notes";
-            // 
-            // panel7
-            // 
-            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(29)))), ((int)(((byte)(33)))), ((int)(((byte)(51)))));
-            this.panel7.Controls.Add(this.label7);
-            this.panel7.Location = new System.Drawing.Point(536, 177);
-            this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(210, 90);
-            this.panel7.TabIndex = 1;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label7.Location = new System.Drawing.Point(51, 36);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 16);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Placeholder text";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Nirmala UI", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
-            this.label8.Location = new System.Drawing.Point(3, 8);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(155, 30);
-            this.label8.TabIndex = 0;
-            this.label8.Text = "Report bugs at:";
-            // 
-            // label9
-            // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label9.Location = new System.Drawing.Point(18, 51);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 16);
-            this.label9.TabIndex = 1;
-            this.label9.Text = "palceholder@email.com";
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(238)));
-            this.label10.ForeColor = System.Drawing.SystemColors.ControlDark;
-            this.label10.Location = new System.Drawing.Point(19, 76);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(163, 16);
-            this.label10.TabIndex = 2;
-            this.label10.Text = "placeholder2@email.com";
+            this.panel8.Location = new System.Drawing.Point(232, 0);
+            this.panel8.Name = "panel8";
+            this.panel8.Size = new System.Drawing.Size(569, 40);
+            this.panel8.TabIndex = 9;
+            this.panel8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel8_MouseDown);
             // 
             // Main
             // 
@@ -393,6 +402,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
@@ -405,6 +415,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Main";
             this.Text = "Main";
+            this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
@@ -415,15 +426,15 @@
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pb_web)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -459,6 +470,7 @@
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Panel panel8;
     }
 }
 

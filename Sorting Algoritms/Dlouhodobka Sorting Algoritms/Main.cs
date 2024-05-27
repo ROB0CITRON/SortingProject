@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Runtime.InteropServices;
 
 namespace Dlouhodobka_Sorting_Algoritms
 {
@@ -14,6 +15,14 @@ namespace Dlouhodobka_Sorting_Algoritms
     {
         ListAlg f2;
         Porovnání f3;
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
 
         public Main()
         {
@@ -61,6 +70,20 @@ namespace Dlouhodobka_Sorting_Algoritms
         private void pb_web_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel8_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            panel8.BackColor = Color.FromArgb(0, Color.Black);
         }
     }
 }
