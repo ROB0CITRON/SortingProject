@@ -40,6 +40,19 @@ namespace Dlouhodobka_Sorting_Algoritms
             quiTime = quiTimes;
             bogTime = bogTimes;
             heaTime = heaTimes;
+
+            Chart[] charts = { chart1, chart2, chart3, chart4, chart5, chart6 };
+
+            for (int i = 0; i < 6; i++)
+                CustomizeChartProperties(charts[i]);
+
+        }
+
+        private void CustomizeChartProperties(Chart chart)
+        {
+            chart.ChartAreas[0].AxisX.LabelStyle.ForeColor = SystemColors.ScrollBar;
+
+            chart.ChartAreas[0].AxisY.LabelStyle.ForeColor = SystemColors.ScrollBar;
         }
 
         public void UpdateData(int elements, double bubTimes, double oddTimes,
@@ -124,15 +137,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 series1.IsXValueIndexed = true;
                 series1.IsVisibleInLegend = false;
                 series1.Color = Color.Blue;
-
-                chart1.Titles.Clear();
-                Title chartTitle = new Title
-                {
-                    Text = "Bubble Sort",
-                    Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold),
-                    ForeColor = System.Drawing.Color.Black
-                };
-                chart1.Titles.Add(chartTitle);
             }
 
             chart1.Legends[0].Enabled = false;
@@ -150,15 +154,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 series2.IsXValueIndexed = true;
                 series2.IsVisibleInLegend = false;
                 series2.Color = Color.Gold;
-
-                chart2.Titles.Clear();
-                Title chartTitle = new Title
-                {
-                    Text = "Odd-Even Sort",
-                    Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold),
-                    ForeColor = System.Drawing.Color.Black
-                };
-                chart2.Titles.Add(chartTitle);
             }
 
             chart2.Legends[0].Enabled = false;
@@ -176,15 +171,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 series3.IsXValueIndexed = true;
                 series3.IsVisibleInLegend = false;
                 series3.Color = Color.Red;
-
-                chart3.Titles.Clear();
-                Title chartTitle = new Title
-                {
-                    Text = "Quick Sort",
-                    Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold),
-                    ForeColor = System.Drawing.Color.Black
-                };
-                chart3.Titles.Add(chartTitle);
             }
 
             chart3.Legends[0].Enabled = false;
@@ -202,15 +188,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 series4.IsXValueIndexed = true;
                 series4.IsVisibleInLegend = false;
                 series4.Color = Color.Pink;
-
-                chart4.Titles.Clear();
-                Title chartTitle = new Title
-                {
-                    Text = "Bogo Sort",
-                    Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold),
-                    ForeColor = System.Drawing.Color.Black
-                };
-                chart4.Titles.Add(chartTitle);
             }
             chart4.Legends[0].Enabled = false;
             chart4.Series["Bogo Sort"].BorderWidth = 3;
@@ -227,15 +204,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 series5.IsXValueIndexed = true;
                 series5.IsVisibleInLegend = false;
                 series5.Color = Color.Gray;
-
-                chart5.Titles.Clear();
-                Title chartTitle = new Title
-                {
-                    Text = "Heap Sort",
-                    Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold),
-                    ForeColor = System.Drawing.Color.Black
-                };
-                chart5.Titles.Add(chartTitle);
             }
 
             chart5.Legends[0].Enabled = false;
@@ -294,15 +262,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 AddSeriesToChart(chart6, "Bogo Sort", element, bogTime);
             if (heaSort)
                 AddSeriesToChart(chart6, "Heap Sort", element, heaTime);
-
-            chart6.Titles.Clear();
-            Title chartTitle = new Title
-            {
-                Text = "All Sorts Performance",
-                Font = new System.Drawing.Font("Arial", 14, System.Drawing.FontStyle.Bold),
-                ForeColor = System.Drawing.Color.Black
-            };
-            chart6.Titles.Add(chartTitle);
 
             chart6.Update();
         }

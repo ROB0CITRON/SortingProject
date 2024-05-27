@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace Dlouhodobka_Sorting_Algoritms
 {
@@ -65,6 +66,14 @@ namespace Dlouhodobka_Sorting_Algoritms
         static bool resBool = false;
 
         static double[] casy = new double[5];
+
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
 
         #endregion
 
@@ -730,5 +739,24 @@ namespace Dlouhodobka_Sorting_Algoritms
         }
 
         #endregion
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btn_min_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void panel7_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
     }
 }

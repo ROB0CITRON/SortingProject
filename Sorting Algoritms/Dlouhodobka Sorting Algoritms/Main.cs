@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Runtime.InteropServices;
+using System.Diagnostics;
 
 namespace Dlouhodobka_Sorting_Algoritms
 {
@@ -69,7 +70,19 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private void pb_web_Click(object sender, EventArgs e)
         {
-
+            string url = "https://github.com/ROB0CITRON/SortingProject"; // Zde zadejte URL, které chcete otevřít
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Nelze otevřít odkaz: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void panel8_MouseDown(object sender, MouseEventArgs e)
@@ -84,6 +97,45 @@ namespace Dlouhodobka_Sorting_Algoritms
         private void Main_Load(object sender, EventArgs e)
         {
             panel8.BackColor = Color.FromArgb(0, Color.Black);
+        }
+
+        private void btn_min_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            string url = "https://www.instagram.com/"; // Zde zadejte URL, které chcete otevřít
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Nelze otevřít odkaz: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            string url = "https://x.com/?lang=cs"; // Zde zadejte URL, které chcete otevřít
+            try
+            {
+                Process.Start(new ProcessStartInfo
+                {
+                    FileName = url,
+                    UseShellExecute = true
+                });
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"Nelze otevřít odkaz: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }

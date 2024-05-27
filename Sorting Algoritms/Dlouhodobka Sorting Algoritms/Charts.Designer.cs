@@ -68,10 +68,15 @@
             // 
             // chart1
             // 
-            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
-            this.chart1.BorderlineColor = System.Drawing.Color.FromArgb(((int)(((byte)(37)))), ((int)(((byte)(42)))), ((int)(((byte)(64)))));
+            this.chart1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             chartArea1.AxisX.Title = "Elements";
+            chartArea1.AxisX.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            chartArea1.AxisX.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea1.AxisX2.TitleForeColor = System.Drawing.Color.RosyBrown;
             chartArea1.AxisY.Title = "Time(ms)";
+            chartArea1.AxisY.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea1.AxisY.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(61)))), ((int)(((byte)(83)))));
             chartArea1.Name = "ChartArea1";
             this.chart1.ChartAreas.Add(chartArea1);
             this.chart1.Dock = System.Windows.Forms.DockStyle.Left;
@@ -87,15 +92,22 @@
             this.chart1.Size = new System.Drawing.Size(300, 366);
             this.chart1.TabIndex = 0;
             this.chart1.Text = "chart1";
-            title1.ForeColor = System.Drawing.SystemColors.ScrollBar;
+            title1.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            title1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
             title1.Name = "Title1";
             title1.Text = "Bubble Sort";
             this.chart1.Titles.Add(title1);
             // 
             // chart2
             // 
+            this.chart2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             chartArea2.AxisX.Title = "Elements";
+            chartArea2.AxisX.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea2.AxisX.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             chartArea2.AxisY.Title = "Time(ms)";
+            chartArea2.AxisY.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea2.AxisY.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(61)))), ((int)(((byte)(83)))));
             chartArea2.Name = "ChartArea1";
             this.chart2.ChartAreas.Add(chartArea2);
             this.chart2.Dock = System.Windows.Forms.DockStyle.Left;
@@ -111,14 +123,22 @@
             this.chart2.Size = new System.Drawing.Size(300, 366);
             this.chart2.TabIndex = 1;
             this.chart2.Text = "chart2";
+            title2.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            title2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
             title2.Name = "Title1";
             title2.Text = "Odd-Even Sort";
             this.chart2.Titles.Add(title2);
             // 
             // chart3
             // 
+            this.chart3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             chartArea3.AxisX.Title = "Elements";
+            chartArea3.AxisX.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea3.AxisX.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             chartArea3.AxisY.Title = "Time(ms)";
+            chartArea3.AxisY.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea3.AxisY.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(61)))), ((int)(((byte)(83)))));
             chartArea3.Name = "ChartArea1";
             this.chart3.ChartAreas.Add(chartArea3);
             this.chart3.Dock = System.Windows.Forms.DockStyle.Left;
@@ -135,14 +155,22 @@
             this.chart3.Size = new System.Drawing.Size(300, 366);
             this.chart3.TabIndex = 2;
             this.chart3.Text = "chart3";
+            title3.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            title3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
             title3.Name = "Title1";
             title3.Text = "Quick Sort";
             this.chart3.Titles.Add(title3);
             // 
             // chart4
             // 
+            this.chart4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             chartArea4.AxisX.Title = "Elements";
+            chartArea4.AxisX.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea4.AxisX.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             chartArea4.AxisY.Title = "Time(ms)";
+            chartArea4.AxisY.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea4.AxisY.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(61)))), ((int)(((byte)(83)))));
             chartArea4.Name = "ChartArea1";
             this.chart4.ChartAreas.Add(chartArea4);
             this.chart4.Dock = System.Windows.Forms.DockStyle.Left;
@@ -158,14 +186,22 @@
             this.chart4.Size = new System.Drawing.Size(300, 366);
             this.chart4.TabIndex = 3;
             this.chart4.Text = "chart4";
+            title4.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            title4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
             title4.Name = "Title1";
             title4.Text = "Bogo Sort";
             this.chart4.Titles.Add(title4);
             // 
             // chart5
             // 
+            this.chart5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             chartArea5.AxisX.Title = "Elements";
+            chartArea5.AxisX.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea5.AxisX.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             chartArea5.AxisY.Title = "Time(ms)";
+            chartArea5.AxisY.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea5.AxisY.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(61)))), ((int)(((byte)(83)))));
             chartArea5.Name = "ChartArea1";
             this.chart5.ChartAreas.Add(chartArea5);
             this.chart5.Dock = System.Windows.Forms.DockStyle.Left;
@@ -181,14 +217,22 @@
             this.chart5.Size = new System.Drawing.Size(300, 366);
             this.chart5.TabIndex = 4;
             this.chart5.Text = "chart5";
+            title5.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            title5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
             title5.Name = "Title1";
             title5.Text = "Heap Sort";
             this.chart5.Titles.Add(title5);
             // 
             // chart6
             // 
+            this.chart6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(46)))), ((int)(((byte)(51)))), ((int)(((byte)(73)))));
             chartArea6.AxisX.Title = "Elements";
+            chartArea6.AxisX.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea6.AxisX.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
             chartArea6.AxisY.Title = "Time(ms)";
+            chartArea6.AxisY.TitleFont = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
+            chartArea6.AxisY.TitleForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
+            chartArea6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(61)))), ((int)(((byte)(83)))));
             chartArea6.Name = "ChartArea1";
             this.chart6.ChartAreas.Add(chartArea6);
             this.chart6.Dock = System.Windows.Forms.DockStyle.Left;
@@ -204,8 +248,10 @@
             this.chart6.Size = new System.Drawing.Size(300, 366);
             this.chart6.TabIndex = 5;
             this.chart6.Text = "chart6";
+            title6.Font = new System.Drawing.Font("Nirmala UI", 14.25F, System.Drawing.FontStyle.Bold);
+            title6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(164)))), ((int)(((byte)(249)))));
             title6.Name = "Title1";
-            title6.Text = "All Sorts";
+            title6.Text = "All Sorts Performance";
             this.chart6.Titles.Add(title6);
             // 
             // Charts

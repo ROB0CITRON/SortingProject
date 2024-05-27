@@ -58,6 +58,7 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
+            this.btn_min = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
@@ -72,6 +73,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
             this.panel7.SuspendLayout();
+            this.panel8.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_List
@@ -301,7 +303,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label10.Location = new System.Drawing.Point(19, 76);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(162, 16);
+            this.label10.Size = new System.Drawing.Size(163, 16);
             this.label10.TabIndex = 2;
             this.label10.Text = "placeholder2@email.com";
             // 
@@ -312,7 +314,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label9.Location = new System.Drawing.Point(18, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(155, 16);
+            this.label9.Size = new System.Drawing.Size(156, 16);
             this.label9.TabIndex = 1;
             this.label9.Text = "palceholder@email.com";
             // 
@@ -347,6 +349,7 @@
             this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox6.TabIndex = 2;
             this.pictureBox6.TabStop = false;
+            this.pictureBox6.Click += new System.EventHandler(this.pictureBox6_Click);
             // 
             // pictureBox5
             // 
@@ -357,6 +360,7 @@
             this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox5.TabIndex = 1;
             this.pictureBox5.TabStop = false;
+            this.pictureBox5.Click += new System.EventHandler(this.pictureBox5_Click);
             // 
             // label5
             // 
@@ -385,17 +389,32 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label7.Location = new System.Drawing.Point(51, 36);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(103, 16);
+            this.label7.Size = new System.Drawing.Size(104, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Placeholder text";
             // 
             // panel8
             // 
+            this.panel8.Controls.Add(this.btn_min);
             this.panel8.Location = new System.Drawing.Point(232, 0);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(569, 40);
             this.panel8.TabIndex = 9;
             this.panel8.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panel8_MouseDown);
+            // 
+            // btn_min
+            // 
+            this.btn_min.FlatAppearance.BorderSize = 0;
+            this.btn_min.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_min.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_min.ForeColor = System.Drawing.SystemColors.ControlLight;
+            this.btn_min.Location = new System.Drawing.Point(524, 6);
+            this.btn_min.Name = "btn_min";
+            this.btn_min.Size = new System.Drawing.Size(32, 31);
+            this.btn_min.TabIndex = 20;
+            this.btn_min.Text = "—";
+            this.btn_min.UseVisualStyleBackColor = true;
+            this.btn_min.Click += new System.EventHandler(this.btn_min_Click);
             // 
             // Main
             // 
@@ -436,6 +455,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
+            this.panel8.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -472,6 +492,7 @@
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.Button btn_min;
     }
 }
 
