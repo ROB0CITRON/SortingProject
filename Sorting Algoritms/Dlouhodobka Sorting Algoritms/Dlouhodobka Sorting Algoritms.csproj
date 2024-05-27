@@ -93,6 +93,7 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </EmbeddedResource>
     <EmbeddedResource Include="ListAlg.resx">
       <DependentUpon>ListAlg.cs</DependentUpon>
@@ -160,13 +161,13 @@
     <None Include="Resources\instagram.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\Untitled-2_copy.png" />
+    <None Include="Resources\cross.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\play %281%29.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\cross.png" />
+    <None Include="Resources\Untitled-2_copy.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

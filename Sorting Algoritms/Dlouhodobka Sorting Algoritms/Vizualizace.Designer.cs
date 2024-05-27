@@ -93,7 +93,7 @@
             // trbr_speed
             // 
             this.trbr_speed.Location = new System.Drawing.Point(6, 26);
-            this.trbr_speed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.trbr_speed.Margin = new System.Windows.Forms.Padding(2);
             this.trbr_speed.Maximum = 100;
             this.trbr_speed.Name = "trbr_speed";
             this.trbr_speed.Size = new System.Drawing.Size(203, 45);
@@ -103,7 +103,7 @@
             // tb_speed
             // 
             this.tb_speed.Location = new System.Drawing.Point(213, 37);
-            this.tb_speed.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tb_speed.Margin = new System.Windows.Forms.Padding(2);
             this.tb_speed.Name = "tb_speed";
             this.tb_speed.Size = new System.Drawing.Size(68, 20);
             this.tb_speed.TabIndex = 7;

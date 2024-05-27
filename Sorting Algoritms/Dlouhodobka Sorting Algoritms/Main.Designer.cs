@@ -35,8 +35,14 @@
             this.btn_Help = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox4 = new System.Windows.Forms.PictureBox();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btn_All = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.pb_web = new System.Windows.Forms.PictureBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -46,32 +52,26 @@
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
+            this.pictureBox6 = new System.Windows.Forms.PictureBox();
+            this.pictureBox5 = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label7 = new System.Windows.Forms.Label();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pb_web = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.btn_All = new System.Windows.Forms.Button();
             this.panel8 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.panel4.SuspendLayout();
-            this.panel5.SuspendLayout();
-            this.panel6.SuspendLayout();
-            this.panel7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_web)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_web)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            this.panel6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
+            this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_List
@@ -114,6 +114,7 @@
             // 
             // btn_Help
             // 
+            this.btn_Help.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
             this.btn_Help.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Help.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_Help.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -122,7 +123,7 @@
             this.btn_Help.Size = new System.Drawing.Size(170, 36);
             this.btn_Help.TabIndex = 4;
             this.btn_Help.Text = "Help";
-            this.btn_Help.UseVisualStyleBackColor = true;
+            this.btn_Help.UseVisualStyleBackColor = false;
             this.btn_Help.Click += new System.EventHandler(this.btn_Help_Click);
             // 
             // label2
@@ -153,6 +154,36 @@
             this.panel1.Size = new System.Drawing.Size(233, 450);
             this.panel1.TabIndex = 6;
             // 
+            // pictureBox4
+            // 
+            this.pictureBox4.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.help;
+            this.pictureBox4.Location = new System.Drawing.Point(8, 259);
+            this.pictureBox4.Name = "pictureBox4";
+            this.pictureBox4.Size = new System.Drawing.Size(42, 36);
+            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox4.TabIndex = 8;
+            this.pictureBox4.TabStop = false;
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.bar_chart;
+            this.pictureBox3.Location = new System.Drawing.Point(8, 217);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(42, 36);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 7;
+            this.pictureBox3.TabStop = false;
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.line_graph;
+            this.pictureBox2.Location = new System.Drawing.Point(6, 175);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(48, 36);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 6;
+            this.pictureBox2.TabStop = false;
+            // 
             // panel2
             // 
             this.panel2.Controls.Add(this.pictureBox1);
@@ -160,6 +191,33 @@
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(214, 120);
             this.panel2.TabIndex = 5;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pictureBox1.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.Commerzbank_Logo_2;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(214, 120);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 0;
+            this.pictureBox1.TabStop = false;
+            // 
+            // btn_All
+            // 
+            this.btn_All.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
+            this.btn_All.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btn_All.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_All.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
+            this.btn_All.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.bar_chart;
+            this.btn_All.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.btn_All.Location = new System.Drawing.Point(56, 175);
+            this.btn_All.Name = "btn_All";
+            this.btn_All.Size = new System.Drawing.Size(170, 36);
+            this.btn_All.TabIndex = 0;
+            this.btn_All.Text = "Test all algorithms";
+            this.btn_All.UseVisualStyleBackColor = false;
+            this.btn_All.Click += new System.EventHandler(this.btn_All_Click);
             // 
             // panel3
             // 
@@ -171,6 +229,17 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(210, 129);
             this.panel3.TabIndex = 7;
+            // 
+            // pb_web
+            // 
+            this.pb_web.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.web;
+            this.pb_web.Location = new System.Drawing.Point(82, 75);
+            this.pb_web.Name = "pb_web";
+            this.pb_web.Size = new System.Drawing.Size(40, 40);
+            this.pb_web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pb_web.TabIndex = 2;
+            this.pb_web.TabStop = false;
+            this.pb_web.Click += new System.EventHandler(this.pb_web_Click);
             // 
             // label4
             // 
@@ -232,7 +301,7 @@
             this.label10.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label10.Location = new System.Drawing.Point(19, 76);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(163, 16);
+            this.label10.Size = new System.Drawing.Size(162, 16);
             this.label10.TabIndex = 2;
             this.label10.Text = "placeholder2@email.com";
             // 
@@ -243,7 +312,7 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label9.Location = new System.Drawing.Point(18, 51);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(156, 16);
+            this.label9.Size = new System.Drawing.Size(155, 16);
             this.label9.TabIndex = 1;
             this.label9.Text = "palceholder@email.com";
             // 
@@ -268,6 +337,26 @@
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(210, 129);
             this.panel6.TabIndex = 8;
+            // 
+            // pictureBox6
+            // 
+            this.pictureBox6.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.twitter;
+            this.pictureBox6.Location = new System.Drawing.Point(120, 51);
+            this.pictureBox6.Name = "pictureBox6";
+            this.pictureBox6.Size = new System.Drawing.Size(61, 61);
+            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox6.TabIndex = 2;
+            this.pictureBox6.TabStop = false;
+            // 
+            // pictureBox5
+            // 
+            this.pictureBox5.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.instagram;
+            this.pictureBox5.Location = new System.Drawing.Point(32, 51);
+            this.pictureBox5.Name = "pictureBox5";
+            this.pictureBox5.Size = new System.Drawing.Size(61, 61);
+            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox5.TabIndex = 1;
+            this.pictureBox5.TabStop = false;
             // 
             // label5
             // 
@@ -296,97 +385,9 @@
             this.label7.ForeColor = System.Drawing.SystemColors.ControlDark;
             this.label7.Location = new System.Drawing.Point(51, 36);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(104, 16);
+            this.label7.Size = new System.Drawing.Size(103, 16);
             this.label7.TabIndex = 0;
             this.label7.Text = "Placeholder text";
-            // 
-            // pictureBox6
-            // 
-            this.pictureBox6.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.twitter;
-            this.pictureBox6.Location = new System.Drawing.Point(120, 51);
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.Size = new System.Drawing.Size(61, 61);
-            this.pictureBox6.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox6.TabIndex = 2;
-            this.pictureBox6.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            this.pictureBox5.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.instagram;
-            this.pictureBox5.Location = new System.Drawing.Point(32, 51);
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.Size = new System.Drawing.Size(61, 61);
-            this.pictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox5.TabIndex = 1;
-            this.pictureBox5.TabStop = false;
-            // 
-            // pb_web
-            // 
-            this.pb_web.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.web;
-            this.pb_web.Location = new System.Drawing.Point(82, 75);
-            this.pb_web.Name = "pb_web";
-            this.pb_web.Size = new System.Drawing.Size(40, 40);
-            this.pb_web.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pb_web.TabIndex = 2;
-            this.pb_web.TabStop = false;
-            this.pb_web.Click += new System.EventHandler(this.pb_web_Click);
-            // 
-            // pictureBox4
-            // 
-            this.pictureBox4.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.help;
-            this.pictureBox4.Location = new System.Drawing.Point(8, 259);
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.Size = new System.Drawing.Size(42, 36);
-            this.pictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox4.TabIndex = 8;
-            this.pictureBox4.TabStop = false;
-            // 
-            // pictureBox3
-            // 
-            this.pictureBox3.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.bar_chart;
-            this.pictureBox3.Location = new System.Drawing.Point(8, 217);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(42, 36);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 7;
-            this.pictureBox3.TabStop = false;
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.line_graph;
-            this.pictureBox2.Location = new System.Drawing.Point(6, 175);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(48, 36);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 6;
-            this.pictureBox2.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pictureBox1.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.Commerzbank_Logo_2;
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(214, 120);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
-            // 
-            // btn_All
-            // 
-            this.btn_All.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(54)))));
-            this.btn_All.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btn_All.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btn_All.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
-            this.btn_All.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.bar_chart;
-            this.btn_All.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.btn_All.Location = new System.Drawing.Point(56, 175);
-            this.btn_All.Name = "btn_All";
-            this.btn_All.Size = new System.Drawing.Size(170, 36);
-            this.btn_All.TabIndex = 0;
-            this.btn_All.Text = "Test all algorithms";
-            this.btn_All.UseVisualStyleBackColor = false;
-            this.btn_All.Click += new System.EventHandler(this.btn_All_Click);
             // 
             // panel8
             // 
@@ -417,24 +418,24 @@
             this.Text = "Main";
             this.Load += new System.EventHandler(this.Main_Load);
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             this.panel2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pb_web)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
-            this.panel7.ResumeLayout(false);
-            this.panel7.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pb_web)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            this.panel7.ResumeLayout(false);
+            this.panel7.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 

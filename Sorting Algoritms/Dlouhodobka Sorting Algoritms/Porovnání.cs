@@ -122,7 +122,6 @@ namespace Dlouhodobka_Sorting_Algoritms
         {
             resBool = false;
             btn_start.Enabled = false;
-            btn_start.BackColor = Color.LightGray;
 
             int repet = Convert.ToInt32(tb_repet.Text);
 
@@ -131,7 +130,6 @@ namespace Dlouhodobka_Sorting_Algoritms
 
             for (int i = 1; i <= repet; i++)
             {
-                check.Text = $"{i}";
                 Reset();
 
                 #region Val
@@ -652,7 +650,6 @@ namespace Dlouhodobka_Sorting_Algoritms
             pocet = 0;
             zapis = 0;
             porovnani = 0;
-            btn_start.BackColor = Color.White;
             btn_start.Enabled = true;
 
             lbBubbleCas.Text = "Time: 0 ms";

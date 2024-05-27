@@ -101,6 +101,7 @@
             // 
             // btn_BubbleSort
             // 
+            this.btn_BubbleSort.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
             this.btn_BubbleSort.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_BubbleSort.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BubbleSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -109,7 +110,7 @@
             this.btn_BubbleSort.Size = new System.Drawing.Size(232, 65);
             this.btn_BubbleSort.TabIndex = 0;
             this.btn_BubbleSort.Text = "Bubble Sort";
-            this.btn_BubbleSort.UseVisualStyleBackColor = true;
+            this.btn_BubbleSort.UseVisualStyleBackColor = false;
             this.btn_BubbleSort.Click += new System.EventHandler(this.btn_BubbleSort_Click);
             // 
             // tb_PocetPrvku
@@ -152,6 +153,7 @@
             // 
             // btn_OddEven
             // 
+            this.btn_OddEven.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
             this.btn_OddEven.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_OddEven.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_OddEven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -160,7 +162,7 @@
             this.btn_OddEven.Size = new System.Drawing.Size(232, 65);
             this.btn_OddEven.TabIndex = 5;
             this.btn_OddEven.Text = "Odd-Even Sort";
-            this.btn_OddEven.UseVisualStyleBackColor = true;
+            this.btn_OddEven.UseVisualStyleBackColor = false;
             this.btn_OddEven.Click += new System.EventHandler(this.btn_OddEven_Click);
             // 
             // cb_Fast
@@ -180,6 +182,7 @@
             // 
             // btn_Quick
             // 
+            this.btn_Quick.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
             this.btn_Quick.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Quick.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Quick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -188,11 +191,12 @@
             this.btn_Quick.Size = new System.Drawing.Size(232, 65);
             this.btn_Quick.TabIndex = 7;
             this.btn_Quick.Text = "Quick Sort";
-            this.btn_Quick.UseVisualStyleBackColor = true;
+            this.btn_Quick.UseVisualStyleBackColor = false;
             this.btn_Quick.Click += new System.EventHandler(this.btn_Quick_Click);
             // 
             // btn_Bogo
             // 
+            this.btn_Bogo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
             this.btn_Bogo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Bogo.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Bogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -201,11 +205,12 @@
             this.btn_Bogo.Size = new System.Drawing.Size(232, 65);
             this.btn_Bogo.TabIndex = 8;
             this.btn_Bogo.Text = "Bogo Sort";
-            this.btn_Bogo.UseVisualStyleBackColor = true;
+            this.btn_Bogo.UseVisualStyleBackColor = false;
             this.btn_Bogo.Click += new System.EventHandler(this.btn_Bogo_Click);
             // 
             // btn_Heap
             // 
+            this.btn_Heap.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(24)))), ((int)(((byte)(30)))), ((int)(((byte)(74)))));
             this.btn_Heap.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btn_Heap.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Heap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
@@ -214,7 +219,7 @@
             this.btn_Heap.Size = new System.Drawing.Size(232, 65);
             this.btn_Heap.TabIndex = 9;
             this.btn_Heap.Text = "Heap Sort";
-            this.btn_Heap.UseVisualStyleBackColor = true;
+            this.btn_Heap.UseVisualStyleBackColor = false;
             this.btn_Heap.Click += new System.EventHandler(this.btn_Heap_Click);
             // 
             // btn_BubbleHelp
