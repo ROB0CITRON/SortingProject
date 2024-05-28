@@ -1,9 +1,9 @@
 
 <h1 align="center">
-img src="https://github.com/ROB0CITRON/SortingProject/assets/97798689/fa49f921-db98-416d-b542-9d8e70bfb197"
+<img src="https://github.com/ROB0CITRON/SortingProject/assets/97798689/fa49f921-db98-416d-b542-9d8e70bfb197">
 <h1>
 	
-<h4 align="center">A minimal Markdown Editor desktop app built on top of <a href="http://electron.atom.io" target="_blank">Electron</a>.</h4>
+<h4 align="center">A minimal Sorting algorithm application for visualization made with <a href="https://visualstudio.microsoft.com/cs/" target="_blank">Visual Studio</a>.</h4>
 
 <p align="center">
   <a href="https://badge.fury.io/js/electron-markdownify">
