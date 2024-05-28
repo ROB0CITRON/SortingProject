@@ -12,7 +12,7 @@
   <a href="#creators">Creators</a> 
 </p>
 
-![screenshot](https://raw.githubusercontent.com/amitmerchant1990/electron-markdownify/master/app/img/markdownify.gif)
+![screenshot](https://github.com/ROB0CITRON/SortingProject/assets/97798689/2d8208f0-cae1-4d00-9d1f-bc7a14ad2342)
 
 ## Key Features
 
