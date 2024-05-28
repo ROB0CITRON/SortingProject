@@ -11,6 +11,7 @@ using System.Windows.Forms.DataVisualization.Charting;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.ProgressBar;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement.TaskbarClock;
 using System.Xml.Linq;
+using System.Runtime.InteropServices;
 
 namespace Dlouhodobka_Sorting_Algoritms
 {
@@ -29,6 +30,14 @@ namespace Dlouhodobka_Sorting_Algoritms
         bool bogSort = true;
         bool heaSort = true;
 
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
         public Charts(int elements, double bubTimes, double oddTimes,
             double quiTimes, double bogTimes, double heaTimes)
         {
@@ -38,6 +47,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.StartPosition = FormStartPosition.CenterScreen;
             this.AutoScaleMode = AutoScaleMode.Dpi;
             this.Resize += new EventHandler(Form_Resize);
+
 
             element = elements;
             bubTime = bubTimes;
@@ -52,13 +62,14 @@ namespace Dlouhodobka_Sorting_Algoritms
                 CustomizeChartProperties(charts[i]);
 
             ArrangeCharts();
+
         }
 
         private void CustomizeChartProperties(Chart chart)
         {
             chart.ChartAreas[0].AxisX.LabelStyle.ForeColor = SystemColors.ScrollBar;
+
             chart.ChartAreas[0].AxisY.LabelStyle.ForeColor = SystemColors.ScrollBar;
-            chart.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
 
         public void UpdateData(int elements, double bubTimes, double oddTimes,
@@ -95,6 +106,7 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         public void DisableCharts(bool bub, bool odd, bool qui, bool bog, bool hea)
         {
+
             bubSort = !bub;
             oddSort = !odd;
             quiSort = !qui;
@@ -124,13 +136,13 @@ namespace Dlouhodobka_Sorting_Algoritms
                 visibleCharts[i].SetBounds(i * chartWidth, 0, chartWidth, chartHeight);
             }
 
-            foreach (var chart in new[] { chart1, chart2, chart3, chart4, chart5 })
-            {
-                if (!visibleCharts.Contains(chart))
+                foreach (var chart in new[] { chart1, chart2, chart3, chart4, chart5 })
                 {
-                    chart.Visible = false;
+                    if (!visibleCharts.Contains(chart))
+                    {
+                        chart.Visible = false;
+                    }
                 }
-            }
         }
 
         private void Form_Resize(object sender, EventArgs e)
@@ -241,7 +253,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             chart6.Update();
         }
 
-        void AddSeriesToChart(Chart chart, string seriesName, int elements, double time)
+        void AddSeriesToChart(Chart chart, string seriesName, int elements, double time, Color color)
         {
             Series series = new Series(seriesName)
             {
@@ -251,6 +263,7 @@ namespace Dlouhodobka_Sorting_Algoritms
                 IsVisibleInLegend = false
             };
             series.Points.AddXY(elements, time);
+            series.Color = color;
             chart.Series.Add(series);
         }
 
@@ -267,19 +280,38 @@ namespace Dlouhodobka_Sorting_Algoritms
             chart6.Series.Clear();
 
             if (bubSort)
-                AddSeriesToChart(chart6, "Bubble Sort", element, bubTime);
+                AddSeriesToChart(chart6, "Bubble Sort", element, bubTime, Color.Blue);
             if (oddSort)
-                AddSeriesToChart(chart6, "Odd-Even Sort", element, oddTime);
+                AddSeriesToChart(chart6, "Odd-Even Sort", element, oddTime, Color.Gold);
             if (quiSort)
-                AddSeriesToChart(chart6, "Quick Sort", element, quiTime);
+                AddSeriesToChart(chart6, "Quick Sort", element, quiTime, Color.Red);
             if (bogSort)
-                AddSeriesToChart(chart6, "Bogo Sort", element, bogTime);
+                AddSeriesToChart(chart6, "Bogo Sort", element, bogTime, Color.Pink);
             if (heaSort)
-                AddSeriesToChart(chart6, "Heap Sort", element, heaTime);
+                AddSeriesToChart(chart6, "Heap Sort", element, heaTime, Color.LightGray);
 
             chart6.Update();
         }
 
         #endregion
+
+        private void panel1_MouseDown(object sender, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+
+        private void btn_close_Click(object sender, EventArgs e)
+        {
+            this.Dispose();
+        }
+
+        private void btn_min_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
     }
 }

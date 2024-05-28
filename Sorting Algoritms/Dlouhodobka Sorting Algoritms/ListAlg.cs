@@ -32,7 +32,6 @@ namespace Dlouhodobka_Sorting_Algoritms
         private void btn_BubbleSort_Click(object sender, EventArgs e)
         {
             LoadOkna(f3, 1, cb_Fast.Checked);
-
         }
 
         public void LoadOkna(Vizualizace f3, int alg, bool fast)
@@ -54,6 +53,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             f3.Activate();
         }
 
+        #region Btns
         private void btn_OddEven_Click(object sender, EventArgs e)
         {
             LoadOkna(f3, 2, cb_Fast.Checked);
@@ -157,5 +157,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
         }
+        #endregion
     }
 }

@@ -195,6 +195,8 @@ namespace Dlouhodobka_Sorting_Algoritms
                 zapis = 0;
 
                 GenPole();
+                stopwatch = new Stopwatch();
+                stopwatch.Start();
                 await Task.Run(() => BogoSort(numbers));
                 stopwatch.Stop();
                 if (!cbBogo.Checked && !resBool)
@@ -203,9 +205,9 @@ namespace Dlouhodobka_Sorting_Algoritms
                     cas = stopwatch.Elapsed.TotalMilliseconds;
                     casy[2] = cas;
                     pbBogo.Value = pbBogo.Maximum;
-                    lbBogoCas.Text = "Čas: " + cas + " ms";
-                    lbBogoPorovnani.Text = "Počet porovnání: " + porovnani;
-                    lbBogoZapis.Text = "Počet zápisů: " + zapis;
+                    lbBogoCas.Text = $"Time: {cas} ms";
+                    lbBogoPorovnani.Text = $"Number of comparisons: {porovnani}";
+                    lbBogoZapis.Text = $"Number of entries: {zapis}";
                 }
                 porovnani = 0;
                 zapis = 0;
@@ -393,8 +395,12 @@ namespace Dlouhodobka_Sorting_Algoritms
 
                 this.Invoke((MethodInvoker)delegate
                 {
-                    pbOdd.Value++;
-                    pbOdd.Refresh();
+                    try
+                    {
+                        pbOdd.Value++;
+                        pbOdd.Refresh();
+                    }
+                    catch { }
                 });
             }
 
@@ -443,8 +449,12 @@ namespace Dlouhodobka_Sorting_Algoritms
             }
             this.Invoke((MethodInvoker)delegate
             {
-                pbQuick.Value++;
-                pbQuick.Refresh();
+                try
+                {
+                    pbQuick.Value++;
+                    pbQuick.Refresh();
+                }
+                catch { }
             });
         }
 
@@ -493,14 +503,12 @@ namespace Dlouhodobka_Sorting_Algoritms
             }
         }
 
-        static void BogoSort(int[] arr)
+        void BogoSort(int[] arr)
         {
             if (cbBogo.Checked)
                 return;
 
             Random random = new Random();
-            stopwatch = new Stopwatch();
-            stopwatch.Start();
 
             while (!IsSorted(arr))
             {
@@ -522,15 +530,6 @@ namespace Dlouhodobka_Sorting_Algoritms
                 }
                 porovnani++;
             }
-            pbBogo.Value = pbBogo.Maximum;
-
-            stopwatch.Stop();
-            cas = stopwatch.Elapsed.TotalMilliseconds;
-            casy[3] = cas;
-
-            lbBogoCas.Text = $"Time: {cas} ms";
-            lbBogoPorovnani.Text = $"Number of comparisons: {porovnani}";
-            lbBogoZapis.Text = $"Number of entries: {zapis}";
             return true;
         }
 

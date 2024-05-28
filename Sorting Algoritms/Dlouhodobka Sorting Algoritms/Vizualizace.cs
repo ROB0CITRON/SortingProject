@@ -69,7 +69,12 @@ namespace Dlouhodobka_Sorting_Algoritms
             algChosen = false;
             close = false;
             okno = this;
-            trbr_speed.Value = delay;
+            if (fMode)
+            {
+                trbr_speed.Value = 0;
+                tb_speed.Text = "TURBO";
+            }       
+            else trbr_speed.Value = delay;
 
             rectangles = new Rectangle[pocet];
             GenPole();
@@ -426,6 +431,11 @@ namespace Dlouhodobka_Sorting_Algoritms
             for (int i = n / 2 - 1; i >= 0; i--)
             {
                 Heapify(array, n, i);
+
+                if (close)
+                {
+                    return;
+                }
 
                 this.Invoke((MethodInvoker)delegate
                 {
