@@ -138,5 +138,10 @@ namespace Dlouhodobka_Sorting_Algoritms
                 MessageBox.Show($"Nelze otevřít odkaz: {ex.Message}", "Chyba", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+        private void btn_Exit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }
