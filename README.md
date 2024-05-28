@@ -16,10 +16,12 @@
 
 ## Key Features
 
-* Charts - Make changes, See changes
-  - Instantly see how your sorting algorithms perform.
 * Visualization
   - See how each sorting algorithm works with simple column visualization.
+* Compare
+  - See how sorting algortims compare to each other.
+* Charts - Make changes, See changes
+  - Instantly see how your sorting algorithms perform.
 * Explanatory notes
 
 ## How To Use
