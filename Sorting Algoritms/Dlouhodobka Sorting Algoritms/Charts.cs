@@ -34,6 +34,11 @@ namespace Dlouhodobka_Sorting_Algoritms
         {
             InitializeComponent();
 
+            this.Size = new Size(1820, 400);
+            this.StartPosition = FormStartPosition.CenterScreen;
+            this.AutoScaleMode = AutoScaleMode.Dpi;
+            this.Resize += new EventHandler(Form_Resize);
+
             element = elements;
             bubTime = bubTimes;
             oddTime = oddTimes;
@@ -46,13 +51,14 @@ namespace Dlouhodobka_Sorting_Algoritms
             for (int i = 0; i < 6; i++)
                 CustomizeChartProperties(charts[i]);
 
+            ArrangeCharts();
         }
 
         private void CustomizeChartProperties(Chart chart)
         {
             chart.ChartAreas[0].AxisX.LabelStyle.ForeColor = SystemColors.ScrollBar;
-
             chart.ChartAreas[0].AxisY.LabelStyle.ForeColor = SystemColors.ScrollBar;
+            chart.Anchor = AnchorStyles.Top | AnchorStyles.Bottom | AnchorStyles.Left | AnchorStyles.Right;
         }
 
         public void UpdateData(int elements, double bubTimes, double oddTimes,
@@ -89,39 +95,47 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         public void DisableCharts(bool bub, bool odd, bool qui, bool bog, bool hea)
         {
-            this.Width = 1810;
-
             bubSort = !bub;
             oddSort = !odd;
             quiSort = !qui;
             bogSort = !bog;
             heaSort = !hea;
 
-            if (!bubSort)
+            ArrangeCharts();
+        }
+
+        private void ArrangeCharts()
+        {
+            List<Chart> visibleCharts = new List<Chart>();
+
+            if (bubSort) visibleCharts.Add(chart1);
+            if (oddSort) visibleCharts.Add(chart2);
+            if (quiSort) visibleCharts.Add(chart3);
+            if (bogSort) visibleCharts.Add(chart4);
+            if (heaSort) visibleCharts.Add(chart5);
+            visibleCharts.Add(chart6);
+
+            int chartWidth = this.ClientSize.Width / visibleCharts.Count;
+            int chartHeight = this.ClientSize.Height;
+
+            for (int i = 0; i < visibleCharts.Count; i++)
             {
-                chart1.Visible = bubSort;
-                this.Width -= 300;
+                visibleCharts[i].Visible = true;
+                visibleCharts[i].SetBounds(i * chartWidth, 0, chartWidth, chartHeight);
             }
-            if (!oddSort)
+
+            foreach (var chart in new[] { chart1, chart2, chart3, chart4, chart5 })
             {
-                chart2.Visible = oddSort;
-                this.Width -= 300;
+                if (!visibleCharts.Contains(chart))
+                {
+                    chart.Visible = false;
+                }
             }
-            if (!quiSort)
-            {
-                chart3.Visible = quiSort;
-                this.Width -= 300;
-            }
-            if (!bogSort)
-            {
-                chart4.Visible = bogSort;
-                this.Width -= 300;
-            }
-            if (!heaSort)
-            {
-                chart5.Visible = heaSort;
-                this.Width -= 300;
-            }
+        }
+
+        private void Form_Resize(object sender, EventArgs e)
+        {
+            ArrangeCharts();
         }
 
         #endregion
@@ -203,7 +217,7 @@ namespace Dlouhodobka_Sorting_Algoritms
                 series5.Name = "Heap Sort";
                 series5.IsXValueIndexed = true;
                 series5.IsVisibleInLegend = false;
-                series5.Color = Color.Gray;
+                series5.Color = Color.LightGray;
             }
 
             chart5.Legends[0].Enabled = false;

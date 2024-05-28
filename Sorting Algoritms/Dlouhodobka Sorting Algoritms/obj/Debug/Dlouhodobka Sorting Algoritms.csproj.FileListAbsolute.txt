@@ -163,3 +163,33 @@ C:\Users\janpa\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Al
 C:\Users\janpa\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Vizualizace.resources
 C:\Users\janpa\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.GenerateResource.cache
 C:\Users\janpa\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.CoreCompileInputs.cache
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.AssemblyReference.cache
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.exe
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.pdb
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Main.resx
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.exe.config
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.exe
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.pdb
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Charts.resources
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Porovnání.resources
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Main.resources
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.ListAlg.resources
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Properties.Resources.resources
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Vizualizace.resources
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.GenerateResource.cache
+C:\Users\simona\Downloads\SortingProject-Graphical-redesign\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.CoreCompileInputs.cache
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Main.resx
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.exe.config
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.exe
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\bin\Debug\Dlouhodobka Sorting Algoritms.pdb
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.AssemblyReference.cache
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Charts.resources
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Porovnání.resources
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Main.resources
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.ListAlg.resources
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Properties.Resources.resources
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka_Sorting_Algoritms.Vizualizace.resources
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.GenerateResource.cache
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.csproj.CoreCompileInputs.cache
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.exe
+C:\Users\simona\Downloads\SortingProject\Sorting Algoritms\Dlouhodobka Sorting Algoritms\obj\Debug\Dlouhodobka Sorting Algoritms.pdb
