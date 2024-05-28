@@ -28,6 +28,7 @@ namespace Dlouhodobka_Sorting_Algoritms
         public Main()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btn_List_Click(object sender, EventArgs e)

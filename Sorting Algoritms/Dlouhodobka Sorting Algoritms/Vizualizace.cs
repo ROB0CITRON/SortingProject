@@ -59,6 +59,7 @@ namespace Dlouhodobka_Sorting_Algoritms
             SetStyle(ControlStyles.AllPaintingInWmPaint, true);
             SetStyle(ControlStyles.DoubleBuffer, true);
 
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Vizualizace_Load(object sender, EventArgs e)

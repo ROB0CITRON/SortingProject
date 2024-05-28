@@ -80,6 +80,7 @@ namespace Dlouhodobka_Sorting_Algoritms
         public Porovnání()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Porovnání_Load(object sender, EventArgs e)
@@ -227,9 +228,7 @@ namespace Dlouhodobka_Sorting_Algoritms
                 if (resBool)
                 {
                     if (chartsTab != null)
-                    {
                         chartsTab.Dispose();
-                    }
                     return;
                 }
                 ChartLoad();

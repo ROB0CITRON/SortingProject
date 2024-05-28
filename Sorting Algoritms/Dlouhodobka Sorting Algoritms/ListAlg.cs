@@ -27,6 +27,7 @@ namespace Dlouhodobka_Sorting_Algoritms
         public ListAlg()
         {
             InitializeComponent();
+            this.StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void btn_BubbleSort_Click(object sender, EventArgs e)
@@ -158,5 +159,10 @@ namespace Dlouhodobka_Sorting_Algoritms
             }
         }
         #endregion
+
+        private void ListAlg_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
