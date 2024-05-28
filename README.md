@@ -25,8 +25,6 @@
 * Explanatory notes
   - Access detailed notes explaining each algorithm and its behavior.
 
-## How To Use
-
 ## Download
 
 You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Sorting Algorithms for Windows.
