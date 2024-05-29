@@ -31,7 +31,7 @@
 
 ## Download
 
-You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Sorting Algorithms for Windows.
+You can [download](https://github.com/ROB0CITRON/SortingProject/raw/Download/Sorting%20Algorithms.rar) the latest installable version of Sorting Algorithms for Windows.
 
 ## Creators
 
