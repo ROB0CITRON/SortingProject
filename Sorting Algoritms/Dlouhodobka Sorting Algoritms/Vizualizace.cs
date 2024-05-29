@@ -70,12 +70,32 @@ namespace Dlouhodobka_Sorting_Algoritms
             algChosen = false;
             close = false;
             okno = this;
+            #region Delay
             if (fMode)
             {
                 trbr_speed.Value = 0;
                 tb_speed.Text = "TURBO";
             }       
-            else trbr_speed.Value = delay;
+            else if(delay < 100 && !fMode)
+            {
+                try
+                {
+                    trbr_speed.Value = delay;
+                }
+                catch
+                {
+                    tb_speed.Text = "10";
+                }
+                
+            }
+                
+            else if (delay >= 1000 && !fMode)
+                tb_speed.Text = "1000";
+
+            #endregion
+
+            if (pocet >= 2000)
+                pocet = 2000;
 
             rectangles = new Rectangle[pocet];
             GenPole();
@@ -656,6 +676,8 @@ namespace Dlouhodobka_Sorting_Algoritms
             else if (delay > trbr_speed.Maximum)
             {
                 fMode = false;
+                delay = trbr_speed.Maximum;
+                trbr_speed.Value = delay;
             }
             else
             {

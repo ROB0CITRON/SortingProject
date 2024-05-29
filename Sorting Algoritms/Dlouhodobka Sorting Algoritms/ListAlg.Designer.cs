@@ -106,7 +106,7 @@
             this.btn_BubbleSort.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BubbleSort.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_BubbleSort.Location = new System.Drawing.Point(15, 68);
-            this.btn_BubbleSort.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BubbleSort.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BubbleSort.Name = "btn_BubbleSort";
             this.btn_BubbleSort.Size = new System.Drawing.Size(309, 80);
             this.btn_BubbleSort.TabIndex = 0;
@@ -117,7 +117,7 @@
             // tb_PocetPrvku
             // 
             this.tb_PocetPrvku.Location = new System.Drawing.Point(957, 68);
-            this.tb_PocetPrvku.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_PocetPrvku.Margin = new System.Windows.Forms.Padding(4);
             this.tb_PocetPrvku.Name = "tb_PocetPrvku";
             this.tb_PocetPrvku.Size = new System.Drawing.Size(64, 22);
             this.tb_PocetPrvku.TabIndex = 1;
@@ -128,7 +128,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
-            this.label1.Location = new System.Drawing.Point(741, 68);
+            this.label1.Location = new System.Drawing.Point(741, 61);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(194, 28);
@@ -140,7 +140,7 @@
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
-            this.label2.Location = new System.Drawing.Point(651, 113);
+            this.label2.Location = new System.Drawing.Point(654, 106);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(281, 28);
@@ -150,7 +150,7 @@
             // tb_Delay
             // 
             this.tb_Delay.Location = new System.Drawing.Point(957, 113);
-            this.tb_Delay.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tb_Delay.Margin = new System.Windows.Forms.Padding(4);
             this.tb_Delay.Name = "tb_Delay";
             this.tb_Delay.Size = new System.Drawing.Size(64, 22);
             this.tb_Delay.TabIndex = 4;
@@ -163,7 +163,7 @@
             this.btn_OddEven.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_OddEven.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_OddEven.Location = new System.Drawing.Point(15, 155);
-            this.btn_OddEven.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_OddEven.Margin = new System.Windows.Forms.Padding(4);
             this.btn_OddEven.Name = "btn_OddEven";
             this.btn_OddEven.Size = new System.Drawing.Size(309, 80);
             this.btn_OddEven.TabIndex = 5;
@@ -176,7 +176,7 @@
             this.cb_Fast.AutoSize = true;
             this.cb_Fast.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.cb_Fast.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(50)))), ((int)(((byte)(226)))), ((int)(((byte)(178)))));
-            this.cb_Fast.Location = new System.Drawing.Point(872, 145);
+            this.cb_Fast.Location = new System.Drawing.Point(871, 155);
             this.cb_Fast.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.cb_Fast.Name = "cb_Fast";
             this.cb_Fast.RightToLeft = System.Windows.Forms.RightToLeft.Yes;
@@ -193,7 +193,7 @@
             this.btn_Quick.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Quick.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_Quick.Location = new System.Drawing.Point(15, 244);
-            this.btn_Quick.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Quick.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Quick.Name = "btn_Quick";
             this.btn_Quick.Size = new System.Drawing.Size(309, 80);
             this.btn_Quick.TabIndex = 7;
@@ -208,7 +208,7 @@
             this.btn_Bogo.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Bogo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_Bogo.Location = new System.Drawing.Point(15, 331);
-            this.btn_Bogo.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Bogo.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Bogo.Name = "btn_Bogo";
             this.btn_Bogo.Size = new System.Drawing.Size(309, 80);
             this.btn_Bogo.TabIndex = 8;
@@ -223,7 +223,7 @@
             this.btn_Heap.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_Heap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_Heap.Location = new System.Drawing.Point(15, 421);
-            this.btn_Heap.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_Heap.Margin = new System.Windows.Forms.Padding(4);
             this.btn_Heap.Name = "btn_Heap";
             this.btn_Heap.Size = new System.Drawing.Size(309, 80);
             this.btn_Heap.TabIndex = 9;
@@ -238,7 +238,7 @@
             this.btn_BubbleHelp.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_BubbleHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_BubbleHelp.Location = new System.Drawing.Point(332, 96);
-            this.btn_BubbleHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BubbleHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BubbleHelp.Name = "btn_BubbleHelp";
             this.btn_BubbleHelp.Size = new System.Drawing.Size(31, 28);
             this.btn_BubbleHelp.TabIndex = 10;
@@ -254,7 +254,7 @@
             this.btn_OddHelp.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_OddHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_OddHelp.Location = new System.Drawing.Point(332, 181);
-            this.btn_OddHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_OddHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btn_OddHelp.Name = "btn_OddHelp";
             this.btn_OddHelp.Size = new System.Drawing.Size(31, 28);
             this.btn_OddHelp.TabIndex = 11;
@@ -270,7 +270,7 @@
             this.btn_QuickHelp.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_QuickHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_QuickHelp.Location = new System.Drawing.Point(329, 270);
-            this.btn_QuickHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_QuickHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btn_QuickHelp.Name = "btn_QuickHelp";
             this.btn_QuickHelp.Size = new System.Drawing.Size(31, 28);
             this.btn_QuickHelp.TabIndex = 12;
@@ -286,7 +286,7 @@
             this.btn_BogoHelp.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_BogoHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_BogoHelp.Location = new System.Drawing.Point(332, 357);
-            this.btn_BogoHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_BogoHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btn_BogoHelp.Name = "btn_BogoHelp";
             this.btn_BogoHelp.Size = new System.Drawing.Size(31, 28);
             this.btn_BogoHelp.TabIndex = 13;
@@ -302,7 +302,7 @@
             this.btn_HeapHelp.Font = new System.Drawing.Font("Nirmala UI", 9.75F, System.Drawing.FontStyle.Bold);
             this.btn_HeapHelp.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(126)))), ((int)(((byte)(249)))));
             this.btn_HeapHelp.Location = new System.Drawing.Point(329, 447);
-            this.btn_HeapHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_HeapHelp.Margin = new System.Windows.Forms.Padding(4);
             this.btn_HeapHelp.Name = "btn_HeapHelp";
             this.btn_HeapHelp.Size = new System.Drawing.Size(31, 28);
             this.btn_HeapHelp.TabIndex = 14;
@@ -325,7 +325,7 @@
             this.panel1.Controls.Add(this.btn_Heap);
             this.panel1.Controls.Add(this.btn_BubbleHelp);
             this.panel1.Location = new System.Drawing.Point(1, 0);
-            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(375, 510);
             this.panel1.TabIndex = 15;
@@ -337,7 +337,7 @@
             this.btn_close.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_close.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btn_close.Location = new System.Drawing.Point(984, 4);
-            this.btn_close.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_close.Margin = new System.Windows.Forms.Padding(4);
             this.btn_close.Name = "btn_close";
             this.btn_close.Size = new System.Drawing.Size(43, 38);
             this.btn_close.TabIndex = 16;
@@ -355,7 +355,7 @@
             this.pan_bubleHelp.Controls.Add(this.label4);
             this.pan_bubleHelp.Controls.Add(this.label3);
             this.pan_bubleHelp.Location = new System.Drawing.Point(400, 219);
-            this.pan_bubleHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pan_bubleHelp.Margin = new System.Windows.Forms.Padding(4);
             this.pan_bubleHelp.Name = "pan_bubleHelp";
             this.pan_bubleHelp.Size = new System.Drawing.Size(627, 279);
             this.pan_bubleHelp.TabIndex = 17;
@@ -443,7 +443,7 @@
             this.pan_oddHelp.Controls.Add(this.label13);
             this.pan_oddHelp.Controls.Add(this.label14);
             this.pan_oddHelp.Location = new System.Drawing.Point(396, 219);
-            this.pan_oddHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pan_oddHelp.Margin = new System.Windows.Forms.Padding(4);
             this.pan_oddHelp.Name = "pan_oddHelp";
             this.pan_oddHelp.Size = new System.Drawing.Size(627, 279);
             this.pan_oddHelp.TabIndex = 18;
@@ -522,7 +522,7 @@
             this.pan_quickHelp.Controls.Add(this.label17);
             this.pan_quickHelp.Controls.Add(this.label18);
             this.pan_quickHelp.Location = new System.Drawing.Point(396, 219);
-            this.pan_quickHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pan_quickHelp.Margin = new System.Windows.Forms.Padding(4);
             this.pan_quickHelp.Name = "pan_quickHelp";
             this.pan_quickHelp.Size = new System.Drawing.Size(627, 279);
             this.pan_quickHelp.TabIndex = 19;
@@ -647,7 +647,7 @@
             this.pan_bogoHelp.Controls.Add(this.label30);
             this.pan_bogoHelp.Controls.Add(this.label31);
             this.pan_bogoHelp.Location = new System.Drawing.Point(396, 215);
-            this.pan_bogoHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pan_bogoHelp.Margin = new System.Windows.Forms.Padding(4);
             this.pan_bogoHelp.Name = "pan_bogoHelp";
             this.pan_bogoHelp.Size = new System.Drawing.Size(627, 279);
             this.pan_bogoHelp.TabIndex = 20;
@@ -763,7 +763,7 @@
             this.pan_heapHelp.Controls.Add(this.label37);
             this.pan_heapHelp.Controls.Add(this.label38);
             this.pan_heapHelp.Location = new System.Drawing.Point(396, 215);
-            this.pan_heapHelp.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pan_heapHelp.Margin = new System.Windows.Forms.Padding(4);
             this.pan_heapHelp.Name = "pan_heapHelp";
             this.pan_heapHelp.Size = new System.Drawing.Size(627, 279);
             this.pan_heapHelp.TabIndex = 21;
@@ -872,7 +872,7 @@
             this.panel2.Controls.Add(this.pictureBox1);
             this.panel2.Controls.Add(this.btn_close);
             this.panel2.Location = new System.Drawing.Point(1, 0);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1041, 53);
             this.panel2.TabIndex = 22;
@@ -885,7 +885,7 @@
             this.btn_min.Font = new System.Drawing.Font("Nirmala UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btn_min.ForeColor = System.Drawing.SystemColors.ControlLight;
             this.btn_min.Location = new System.Drawing.Point(931, 4);
-            this.btn_min.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btn_min.Margin = new System.Windows.Forms.Padding(4);
             this.btn_min.Name = "btn_min";
             this.btn_min.Size = new System.Drawing.Size(43, 38);
             this.btn_min.TabIndex = 18;
@@ -897,7 +897,7 @@
             // 
             this.pictureBox1.Image = global::Dlouhodobka_Sorting_Algoritms.Properties.Resources.Untitled_2_copy;
             this.pictureBox1.Location = new System.Drawing.Point(15, 12);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(148, 48);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -923,10 +923,9 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.tb_PocetPrvku);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "ListAlg";
             this.Text = "List Algoritmů";
-            this.Load += new System.EventHandler(this.ListAlg_Load);
             this.panel1.ResumeLayout(false);
             this.pan_bubleHelp.ResumeLayout(false);
             this.pan_bubleHelp.PerformLayout();

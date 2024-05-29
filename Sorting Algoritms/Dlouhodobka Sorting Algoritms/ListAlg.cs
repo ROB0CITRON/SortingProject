@@ -30,18 +30,16 @@ namespace Dlouhodobka_Sorting_Algoritms
             this.StartPosition = FormStartPosition.CenterScreen;
         }
 
+        #region Btns
         private void btn_BubbleSort_Click(object sender, EventArgs e)
-        {
-            LoadOkna(f3, 1, cb_Fast.Checked);
-        }
-
-        public void LoadOkna(Vizualizace f3, int alg, bool fast)
         {
             if (f3 == null || f3.IsDisposed)
             {
                 try
                 {
-                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), alg, fast);
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), 1, cb_Fast.Checked);
+                    f3.Show();
+                    f3.Activate();
                 }
                 catch
                 {
@@ -50,14 +48,43 @@ namespace Dlouhodobka_Sorting_Algoritms
                 }
             }
 
-            f3.Show();
-            f3.Activate();
         }
 
-        #region Btns
+       /* public void LoadOkna(Vizualizace f3, int alg, bool fast)
+        {
+            if (f3 == null || f3.IsDisposed)
+            {
+                try
+                {
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), alg, fast);
+                    f3.Show();
+                    f3.Activate();
+                }
+                catch
+                {
+                    MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }       
+        }*/
+
+
         private void btn_OddEven_Click(object sender, EventArgs e)
         {
-            LoadOkna(f3, 2, cb_Fast.Checked);
+            if (f3 == null || f3.IsDisposed)
+            {
+                try
+                {
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), 2, cb_Fast.Checked);
+                    f3.Show();
+                    f3.Activate();
+                }
+                catch
+                {
+                    MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
         }
 
         private void cb_Fast_CheckedChanged(object sender, EventArgs e)
@@ -67,22 +94,74 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private void btn_Quick_Click(object sender, EventArgs e)
         {
-            LoadOkna(f3, 3, cb_Fast.Checked);
+            if (f3 == null || f3.IsDisposed)
+            {
+                try
+                {
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), 3, cb_Fast.Checked);
+                    f3.Show();
+                    f3.Activate();
+                }
+                catch
+                {
+                    MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
         }
 
         private void btn_Bogo_Click(object sender, EventArgs e)
         {
-            LoadOkna(f3, 4, cb_Fast.Checked);
+            if (f3 == null || f3.IsDisposed)
+            {
+                try
+                {
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), 4, cb_Fast.Checked);
+                    f3.Show();
+                    f3.Activate();
+                }
+                catch
+                {
+                    MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
         }
 
         private void btn_Heap_Click(object sender, EventArgs e)
         {
-            LoadOkna(f3, 5, cb_Fast.Checked);
+            if (f3 == null || f3.IsDisposed)
+            {
+                try
+                {
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), 5, cb_Fast.Checked);
+                    f3.Show();
+                    f3.Activate();
+                }
+                catch
+                {
+                    MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
         }
 
         private void btn_Merge_Click(object sender, EventArgs e)
         {
-            LoadOkna(f3, 6, cb_Fast.Checked);
+            if (f3 == null || f3.IsDisposed)
+            {
+                try
+                {
+                    f3 = new Vizualizace(Convert.ToInt32(tb_PocetPrvku.Text), Convert.ToInt32(tb_Delay.Text), 6, cb_Fast.Checked);
+                    f3.Show();
+                    f3.Activate();
+                }
+                catch
+                {
+                    MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
         }
 
         private void btn_BubbleHelp_MouseEnter(object sender, EventArgs e)
@@ -160,9 +239,5 @@ namespace Dlouhodobka_Sorting_Algoritms
         }
         #endregion
 
-        private void ListAlg_Load(object sender, EventArgs e)
-        {
-
-        }
     }
 }

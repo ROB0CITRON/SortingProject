@@ -107,7 +107,7 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private void pictureBox5_Click(object sender, EventArgs e)
         {
-            string url = "https://www.instagram.com/"; // Zde zadejte URL, které chcete otevřít
+            string url = "https://www.instagram.com/commerzbank/"; // Zde zadejte URL, které chcete otevřít
             try
             {
                 Process.Start(new ProcessStartInfo
@@ -124,7 +124,7 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private void pictureBox6_Click(object sender, EventArgs e)
         {
-            string url = "https://x.com/?lang=cs"; // Zde zadejte URL, které chcete otevřít
+            string url = "https://x.com/commerzbank"; // Zde zadejte URL, které chcete otevřít
             try
             {
                 Process.Start(new ProcessStartInfo

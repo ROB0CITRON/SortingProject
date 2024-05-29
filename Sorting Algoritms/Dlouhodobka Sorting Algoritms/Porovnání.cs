@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
 using System.Runtime.InteropServices;
+using System.Text.RegularExpressions;
 
 namespace Dlouhodobka_Sorting_Algoritms
 {
@@ -130,13 +131,59 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         private async void btn_start_Click(object sender, EventArgs e)
         {
+            btn_start.Enabled = false;
             resBool = false;
             btn_start.Enabled = false;
+            bool repetCheck = false;
+            bool pocetCheck = false;
+            int repet = 1;
+            int add = 1;
 
-            int repet = Convert.ToInt32(tb_repet.Text);
+            tb_pocet.Enabled = false;
+            tb_repet.Enabled = false;
+            tbAdd.Enabled = false;
 
-            if (repet <= 0)
-                MessageBox.Show("ERROR\n\n" + "Choose number higher than 0", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            cbBogo.Enabled = false;
+            cbBubble.Enabled = false;
+            cbHeap.Enabled = false;
+            cbOdd.Enabled = false;
+            cbQuick.Enabled = false;
+
+            #region Repet
+            try
+            {
+                repet = Convert.ToInt32(tb_repet.Text);
+                repetCheck = true;     
+            }
+            catch 
+            {
+                MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (repetCheck)
+            {
+                if (repet <= 0)
+                {
+                    MessageBox.Show("ERROR\n\n" + "Choose number higher than 0", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+                    
+            }
+            #endregion
+
+            #region Add
+            try
+            {
+                add = Convert.ToInt32(tbAdd.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Enter the numbers in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            #endregion
+
 
             for (int i = 1; i <= repet; i++)
             {
@@ -146,11 +193,22 @@ namespace Dlouhodobka_Sorting_Algoritms
                 try
                 {
                     pocet = Convert.ToInt32(tb_pocet.Text);
+                    pocetCheck = true;
                 }
                 catch
                 {
                     MessageBox.Show("Enter the number in the correct format", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                     return;
+                }
+
+                if (pocetCheck)
+                {
+                    if (pocet <= 0)
+                    {
+                        MessageBox.Show("ERROR\n\n" + "Choose number higher than 0", "ERROR", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                        return;
+                    }
+
                 }
 
                 if (i > 1)
@@ -309,8 +367,11 @@ namespace Dlouhodobka_Sorting_Algoritms
                 }
                 this.Invoke((MethodInvoker)delegate
                 {
-                    pbBubble.Value++;
-                    pbBubble.Refresh();
+                    try {
+                        pbBubble.Value++;
+                        pbBubble.Refresh();
+                    }
+                    catch { }
                 });
             }
 
@@ -374,8 +435,11 @@ namespace Dlouhodobka_Sorting_Algoritms
 
                 this.Invoke((MethodInvoker)delegate
                 {
-                    pbOdd.Value++;
-                    pbOdd.Refresh();
+                    try {
+                        pbOdd.Value++;
+                        pbOdd.Refresh();
+                    }
+                    catch { }
                 });
 
                 for (int i = 0; i < n - 1; i += 2) // Sudá fáze
@@ -578,20 +642,24 @@ namespace Dlouhodobka_Sorting_Algoritms
                 Heapify(array, i, 0);
                 this.Invoke((MethodInvoker)delegate
                 {
-                    pbHeap.Value++;
-                    pbHeap.Refresh();
+                    try
+                    {
+                        pbHeap.Value++;
+                        pbHeap.Refresh();
+                    }
+                    catch { }
                 });
             }
 
             this.Invoke((MethodInvoker)delegate
             {
-                stopwatch.Stop();
-                cas = stopwatch.Elapsed.TotalMilliseconds;
-                casy[4] = cas;
+                    stopwatch.Stop();
+                    cas = stopwatch.Elapsed.TotalMilliseconds;
+                    casy[4] = cas;
 
-                lbHeapCas.Text = $"Time: {cas} ms";
-                lbHeapPorovnani.Text = $"Number of comparisons: {porovnani}";
-                lbHeapZapis.Text = $"Number of entries: {zapis}";
+                    lbHeapCas.Text = $"Time: {cas} ms";
+                    lbHeapPorovnani.Text = $"Number of comparisons: {porovnani}";
+                    lbHeapZapis.Text = $"Number of entries: {zapis}";
             });
 
         }
@@ -639,8 +707,20 @@ namespace Dlouhodobka_Sorting_Algoritms
         private void btn_reset_Click(object sender, EventArgs e)
         {
             resBool = true;
+            btn_start.Enabled = true;
+            if (chartsTab != null)
+                chartsTab.Dispose();
             Reset();
 
+            tb_pocet.Enabled = true;
+            tb_repet.Enabled = true;
+            tbAdd.Enabled = true;
+
+            cbBogo.Enabled = true;
+            cbBubble.Enabled = true;
+            cbHeap.Enabled = true;
+            cbOdd.Enabled = true;
+            cbQuick.Enabled = true;
         }
 
         void Reset()
@@ -657,7 +737,6 @@ namespace Dlouhodobka_Sorting_Algoritms
             pocet = 0;
             zapis = 0;
             porovnani = 0;
-            btn_start.Enabled = true;
 
             lbBubbleCas.Text = "Time: 0 ms";
             lbBubblePorovnani.Text = "Number of comparisons: ??";
@@ -738,10 +817,18 @@ namespace Dlouhodobka_Sorting_Algoritms
 
         #endregion
 
-        private void btn_close_Click(object sender, EventArgs e)
+        private async void btn_close_Click(object sender, EventArgs e)
         {
+            resBool = true;
+            btn_start.Enabled = true;
+            if (chartsTab != null)
+                chartsTab.Dispose();
+
+            Reset();
+            await Task.Delay(100);
             this.Dispose();
         }
+
 
         private void btn_min_Click(object sender, EventArgs e)
         {
@@ -755,6 +842,20 @@ namespace Dlouhodobka_Sorting_Algoritms
                 ReleaseCapture();
                 SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
             }
+        }
+
+        private void cb_bogo_CheckedChanged(object sender, EventArgs e)
+        {
+            if (!cb_bogo.Checked) 
+            {
+                MessageBox.Show("Bogo sort operates by randomization. Exercise caution with larger numbers.", "Warning", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                cb_bogo.Checked = false;
+            }
+            else
+            {
+                cb_bogo.Checked = true;
+            }
+            
         }
     }
 }
