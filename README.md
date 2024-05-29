@@ -35,7 +35,7 @@ You can [download](https://github.com/amitmerchant1990/electron-markdownify/rele
 
 ## Creators
 
-[![ByboCZ](https://avatars.githubusercontent.com/u/97798689?v=4)](https://github.com/ByboCZ)  | [![ROB0CITRON](https://avatars.githubusercontent.com/u/155917021?v=4)](https://github.com/ROB0CITRON) 
+<td width="100">[![ByboCZ](https://avatars.githubusercontent.com/u/97798689?v=4)](https://github.com/ByboCZ)  | [![ROB0CITRON](https://avatars.githubusercontent.com/u/155917021?v=4)](https://github.com/ROB0CITRON)</td>
 ---|---
 [ByboCZ](https://github.com/ByboCZ) |[ROB0CITRON](https://github.com/ROB0CITRON)
 
