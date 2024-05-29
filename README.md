@@ -34,7 +34,10 @@
 You can [download](https://github.com/amitmerchant1990/electron-markdownify/releases/tag/v1.2.0) the latest installable version of Sorting Algorithms for Windows.
 
 ## Creators
-* Jan Papuga (@ByboCZ)
-* Lukáš Pešek (@ROB0CITRON)
+
+[![ByboCZ](https://avatars.githubusercontent.com/u/97798689?v=4)](https://github.com/ByboCZ)  | [![[ROB0CITRON](https://avatars.githubusercontent.com/u/155917021?v=4)](https://github.com/ROB0CITRON) 
+---|---
+[ByboCZ](https://github.com/ByboCZ) |[ROB0CITRON](https://github.com/ROB0CITRON)
+
 
 
