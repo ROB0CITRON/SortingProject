@@ -11,7 +11,7 @@
   <a href="#creators">Creators</a> 
 </p>
 
-![screenshot](https://github.com/ROB0CITRON/SortingProject/assets/97798689/d099b661-7e71-4251-b895-b6a4b85f91cf)
+![Snímek obrazovky 2024-05-29 092834](https://github.com/ROB0CITRON/SortingProject/assets/97798689/fe588aa2-852f-4cec-b193-bb30227e219f)
 ![Záznam 2024-05-29 091501](https://github.com/ROB0CITRON/SortingProject/assets/97798689/3ff38a83-b0a7-4810-a93b-3ce6133f244e)
 
 
