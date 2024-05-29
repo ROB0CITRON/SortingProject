@@ -11,13 +11,13 @@
   <a href="#creators">Creators</a> 
 </p>
 
-<h1 align="center">
+<a align="center">
 <img src="https://github.com/ROB0CITRON/SortingProject/assets/97798689/fe588aa2-852f-4cec-b193-bb30227e219f">
-<h1/>	
+<a/>	
 	
-<h1 align="center">
+<a align="center">
 <img src="https://github.com/ROB0CITRON/SortingProject/assets/97798689/3ff38a83-b0a7-4810-a93b-3ce6133f244e">
-<h1/>
+<a/>
 
 
 ## Key Features
