@@ -2,9 +2,13 @@
 <Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
+<<<<<<< Updated upstream
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{4C8DB5A4-35F2-47E7-80C4-6A332AFDA0C3}</ProjectGuid>
+=======
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+>>>>>>> Stashed changes
     <OutputType>WinExe</OutputType>
     <RootNamespace>Dlouhodobka_Sorting_Algoritms</RootNamespace>
     <AssemblyName>Dlouhodobka Sorting Algoritms</AssemblyName>
