@@ -14,7 +14,7 @@
 </div>	
 	
 <div align="center">
-<img src="https://github.com/ROB0CITRON/SortingProject/assets/97798689/3ff38a83-b0a7-4810-a93b-3ce6133f244e">
+<img src="https://github.com/ROB0CITRON/SortingProject/assets/97798689/f7705504-a811-4ae6-af10-691f2027ef05">
 </div>
 
 
